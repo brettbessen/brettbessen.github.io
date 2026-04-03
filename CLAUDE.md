@@ -30,15 +30,18 @@ ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
 - [x] `files/` folder created for CV and other downloads
 - [x] CV symlinked from Dropbox/Overleaf — auto-updates when CV is recompiled
 - [x] Profile photo added to home page (two-column layout)
+- [x] Git repo initialized and pushed to GitHub as `brettbessen.github.io`
+- [x] GitHub Pages enabled (source: `master` branch, `/docs` folder)
+- [x] Site live at https://brettbessen.github.io/
 
 ## Remaining Tasks
-- [ ] Add working papers section to research page
+- [ ] Point GoDaddy domain (brettbessen.com) to GitHub Pages — next step is to add custom domain in GitHub Pages settings, then update DNS A records and CNAME in GoDaddy (see conversation for exact records)
 - [ ] Add syllabus/course files to teaching page
 - [ ] Add course evaluations/reviews PDF to teaching page
-- [ ] Initialize git repo and push to GitHub as `brettbessen.github.io`
-- [ ] Enable GitHub Pages on the repo
-- [ ] Point GoDaddy domain (brettbessen.com) to GitHub Pages
 - [ ] Final review before going live and turning off Google Sites
+
+## Deploy Workflow
+Edit `.qmd` files → `quarto render` → `git add . && git commit -m "message" && git push`
 
 ## Preview
 ```bash
