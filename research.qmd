@@ -1,0 +1,33 @@
+---
+title: "Research"
+---
+
+## Publications
+
+**Restoring institutional confidence in backsliding democracies: Evidence from Mexico**
+(with Susan Stokes & Andrés Uribe) — *PNAS*, 2025
+[[Paper](https://www.pnas.org/doi/10.1073/pnas.2516520122)] [[Supplemental](https://www.pnas.org/doi/suppl/10.1073/pnas.2516520122/suppl_file/pnas.2516520122.sapp.pdf)] [[Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HOJD6F)]
+
+**Stereotypes and scandals: Politician gender and public judgments about scandal in Mexico**
+(with Fernanda Quintanilla Domínguez & Rebecca Bell-Martin) — *Research & Politics*, 2025
+[[Paper](https://doi.org/10.1177/20531680251409456)] [[Supplemental](https://journals.sagepub.com/doi/suppl/10.1177/20531680251409456/suppl_file/sj-pdf-1-rap-10.1177_20531680251409456.pdf)] [[Replication](https://doi.org/10.7910/DVN/EQI4MB)]
+
+**Populist Discourse and Public Support for Executive Aggrandizement in Latin America**
+*Comparative Political Studies*, 2024
+[[Paper](https://journals.sagepub.com/doi/full/10.1177/00104140231223738)] [[Supplemental](https://journals.sagepub.com/doi/suppl/10.1177/00104140231223738/suppl_file/sj-pdf-1-cps-10.1177_00104140231223738.pdf)] [[Replication](https://doi.org/10.7910/DVN/NN3DMP)]
+
+**Fairweather Cosmopolitans: Immigration Attitudes in Latin America During the Migrant Crisis**
+(with Brendan Connell & Ken Stallman) — *Latin American Politics and Society*, 2024
+[[Paper](https://doi.org/10.1017/lap.2024.35)] [[Supplemental](https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS1531426X24000359/resource/name/S1531426X24000359sup001.pdf)] [[Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MQMOTU)]
+
+**Another day, another currency: self-interest, experience, and attitudes toward dollarization in Ecuador**
+(with Brendan Connell) — *Political Behavior*, 2024
+[[Paper](https://link.springer.com/article/10.1007/s11109-022-09840-z)] [[Supplemental](https://static-content.springer.com/esm/art%3A10.1007%2Fs11109-022-09840-z/MediaObjects/11109_2022_9840_MOESM1_ESM.pdf)] [[Replication](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/E2JO5N)]
+
+**Rejecting representation? Party systems and popular support for referendums in Europe**
+*Electoral Studies*, 2020
+[[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0261379420300998)] [[Supplemental](https://drive.google.com/file/d/1K9xJqotlZ_GtlBR4as-J81xEW7OhqNab/view?usp=drive_link)]
+
+## Working Papers
+
+*Coming soon*

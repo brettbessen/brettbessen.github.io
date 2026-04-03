@@ -1,0 +1,24 @@
+---
+title: "Brett R. Bessen"
+---
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](files/head_shot.jpeg){width=100% style="border-radius: 4px;"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+I am an Assistant Professor in Political Science and International Relations at [Tecnológico de Monterrey](https://tec.mx) in Mexico. I received my Ph.D. from the University of Colorado Boulder.
+
+My research focuses on why people support or resist elected leaders who undermine democracy. I also study public attitudes about migration and direct democracy in varying political contexts. My work combines survey experiments, text analysis, and multilevel statistical modeling.
+
+My research has been published in *PNAS*, *Comparative Political Studies*, *Political Behavior*, *Electoral Studies*, and *Research & Politics*, among other journals.
+
+[brettbessen@tec.mx](mailto:brettbessen@tec.mx) | [Google Scholar](https://scholar.google.com.mx/citations?user=JWYqgN0AAAAJ&hl=es&oi=ao) | [Twitter/X](https://twitter.com/BessenBrett) | [LinkedIn](https://www.linkedin.com/in/brett-bessen/)
+:::
+
+::::
