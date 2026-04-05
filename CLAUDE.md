@@ -38,11 +38,12 @@ ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
 - [x] HTTPS enforced via GitHub Pages
 - [x] Rejecting Representation paper and supplemental PDFs added to `files/` and linked on research page
 - [x] Bio updated and proofread on home page
+- [x] SEO: hidden meta description and keywords added via `meta.html` included in page `<head>`
 
 ## Remaining Tasks
+- [ ] Submit site to Google Search Console
 - [ ] Add syllabus/course files to teaching page
 - [ ] Add course evaluations/reviews PDF to teaching page
-- [ ] SEO improvements (see recommendations in conversation)
 - [ ] Final review and turn off Google Sites
 
 ## Deploy Workflow
