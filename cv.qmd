@@ -1,5 +1,6 @@
 ---
 title: "CV"
+description: "Curriculum vitae of Brett R. Bessen, political scientist at Tecnológico de Monterrey."
 ---
 
 My full CV is available for download below.

@@ -33,27 +33,17 @@ ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
 - [x] Git repo initialized and pushed to GitHub as `brettbessen.github.io`
 - [x] GitHub Pages enabled (source: `master` branch, `/docs` folder)
 - [x] Site live at https://brettbessen.github.io/
-- [x] Custom domain `brettbessen.com` configured in GitHub Pages settings
-- [x] Old Google Sites DNS records removed from GoDaddy (locked A records — may need GoDaddy support to confirm removal)
-- [ ] Add remaining 3 GitHub Pages A records in GoDaddy (185.199.109.153, 185.199.110.153, 185.199.111.153) — first one (185.199.108.153) may already be added
-- [ ] Add CNAME record in GoDaddy: `www` → `brettbessen.github.io`
-
-## GoDaddy DNS Records to Add
-Four A records (Name = `@`) and one CNAME:
-| Type | Name | Data |
-|------|------|------|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | brettbessen.github.io |
+- [x] Custom domain `brettbessen.com` configured in GitHub Pages settings; DNS check successful
+- [x] GoDaddy DNS updated: 4 GitHub A records and www CNAME added; old Google records removed
+- [x] HTTPS enforced via GitHub Pages
+- [x] Rejecting Representation paper and supplemental PDFs added to `files/` and linked on research page
+- [x] Bio updated and proofread on home page
 
 ## Remaining Tasks
-- [ ] Finish adding DNS records in GoDaddy (see above)
-- [ ] Verify domain is active and HTTPS is working (check GitHub repo Settings → Pages)
 - [ ] Add syllabus/course files to teaching page
 - [ ] Add course evaluations/reviews PDF to teaching page
-- [ ] Final review before going live and turning off Google Sites
+- [ ] SEO improvements (see recommendations in conversation)
+- [ ] Final review and turn off Google Sites
 
 ## Deploy Workflow
 Edit `.qmd` files → `quarto render` → `git add . && git commit -m "message" && git push`
