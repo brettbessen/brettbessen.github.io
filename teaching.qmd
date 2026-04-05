@@ -1,6 +1,5 @@
 ---
 title: "Teaching"
-description: "Courses taught by Brett R. Bessen in political science, research methods, democratic erosion, and Latin American politics at Tecnológico de Monterrey."
 ---
 
 

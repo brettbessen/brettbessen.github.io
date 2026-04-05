@@ -1,6 +1,5 @@
 ---
 title: "Research"
-description: "Publications by Brett R. Bessen on democratic backsliding, public opinion, executive aggrandizement, and migration in comparative perspective, with a focus on Mexico and Latin America."
 ---
 
 ## Publications

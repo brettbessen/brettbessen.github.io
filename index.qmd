@@ -1,6 +1,5 @@
 ---
 title: "Brett R. Bessen"
-description: "Political scientist at Tecnológico de Monterrey researching democratic backsliding, public opinion, and executive aggrandizement in comparative perspective, with a focus on Mexico and Latin America."
 ---
 
 :::: {.columns}
