@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(quarto preview:*)"
+      "Bash(quarto preview:*)",
+      "Bash(gh api:*)"
     ]
   }
 }

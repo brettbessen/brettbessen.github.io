@@ -26,4 +26,4 @@ title: "Research"
 
 **Rejecting representation? Party systems and popular support for referendums in Europe**
 *Electoral Studies*, 2020
-[[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0261379420300998)] [[Supplemental](https://drive.google.com/file/d/1K9xJqotlZ_GtlBR4as-J81xEW7OhqNab/view?usp=drive_link)]
+[[Paper](files/Bessen - Rejecting Representation - 2020.pdf)] [[Supplemental](https://drive.google.com/file/d/1K9xJqotlZ_GtlBR4as-J81xEW7OhqNab/view?usp=drive_link)]
