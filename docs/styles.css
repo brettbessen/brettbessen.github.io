@@ -1,1 +1,50 @@
-/* css styles */
+/* Small button style for links */
+.btn-xs {
+  padding: 1px 7px;
+  font-size: 0.82em;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+}
+.btn-xs:hover {
+  text-decoration: none;
+}
+
+/* Abstract toggle — plain grey text with caret */
+details {
+  display: block;
+  margin-top: 0.35em;
+}
+details summary {
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 0.88em;
+  user-select: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary::marker {
+  content: none;
+}
+details summary::before {
+  content: "▸ ";
+}
+details[open] summary::before {
+  content: "▾ ";
+}
+details[open] p {
+  margin-top: 0.5em;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* Entry dividers */
+hr {
+  margin: 1.2em 0;
+  border: none;
+  border-top: 1px solid #dee2e6;
+}
