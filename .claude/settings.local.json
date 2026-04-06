@@ -3,7 +3,11 @@
     "allow": [
       "Bash(quarto preview:*)",
       "Bash(gh api:*)",
-      "Bash(quarto render:*)"
+      "Bash(quarto render:*)",
+      "WebFetch(domain:www.pnas.org)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:journals.sagepub.com)",
+      "WebFetch(domain:link.springer.com)"
     ]
   }
 }
