@@ -6,26 +6,47 @@ title: "Teaching"
 ## Courses
 
 **Experiments and Causal Inference**
-Spring 2023/2024 | Fall 2023
+Spring 2023–25 | Fall 2023\
+<a href="files/syllabuses/Experiments%20and%20Causal%20Inference%20-%20%20Spring%202025.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Democratic Erosion**
-Fall 2025 | Fall 2026
+Fall 2025 | Spring–Fall 2026\
+<a href="files/syllabuses/Democratic%20Erosion%20-%20Spring%202026.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Research Methods** (Senior Seminar)
-Fall 2023/2024/2025 | Spring 2023/2024/2026
+Fall 2023–25 | Spring 2023–26\
+<a href="files/syllabuses/Research%20Methods%20-%20Spring%202026.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Introduction to Social Science**
-Fall 2023/2024
+Fall 2023–24\
+<a href="files/syllabuses/Intro%20to%20Social%20Science%20-%20Fall%202024.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
 
-**Political Communication**
-Spring 2023/2024
+<hr>
+
+**Political Communication** (Short Course)
+Spring 2023–24\
+<a href="files/syllabuses/PolCom%20-%20Syllabus%20Spring%202024.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Designing and Analyzing Experiments** (Faculty course)
-January 2024
+January 2024\
+<a href="files/syllabuses/Survey%20Experiments%20-%20Faculty%20Short%20Course%20-%20Jan%202024.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Applied Political Science Research**
-Fall 2021
+Fall 2021\
+<a href="files/syllabuses/Political%20Science%20Research%20and%20Methods%20-%20Fall%202021.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+
+<hr>
 
 **Issues in Latin American Politics**
-Summer 2020
-
+Summer 2020\
+<a href="files/syllabuses/Issues%20in%20Latin%20American%20Politics%20-%20Summer%202020.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>

@@ -39,6 +39,7 @@ ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
 - [x] Rejecting Representation paper and supplemental PDFs added to `files/` and linked on research page
 - [x] Bio updated and proofread on home page
 - [x] SEO: hidden meta description and keywords added via `meta.html` included in page `<head>`
+- [x] Research page redesigned: title + metadata on one line, Bootstrap icon buttons (Open Access, Supplemental, Replication/PDF), grey caret abstract toggle, `<hr>` between entries
 
 ## Remaining Tasks
 - [ ] Submit site to Google Search Console

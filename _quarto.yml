@@ -6,6 +6,8 @@ project:
 
 website:
   title: "Brett R. Bessen"
+  favicon: favicon.svg
+  google-analytics: "G-SRPDL0S24K"
   navbar:
     left:
       - href: index.qmd

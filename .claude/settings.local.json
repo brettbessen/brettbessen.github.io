@@ -7,7 +7,17 @@
       "WebFetch(domain:www.pnas.org)",
       "WebFetch(domain:doi.org)",
       "WebFetch(domain:journals.sagepub.com)",
-      "WebFetch(domain:link.springer.com)"
+      "WebFetch(domain:link.springer.com)",
+      "Bash(git pull *)",
+      "Bash(git push *)",
+      "Bash(git stash *)",
+      "Bash(git rebase *)",
+      "Bash(git add *)",
+      "Bash(git checkout *)",
+      "Bash(echo \"brettbessen.com\")",
+      "Bash(cp files/syllabuses/*.pdf docs/files/syllabuses/)",
+      "Bash(GIT_EDITOR=true git rebase --continue)",
+      "Bash(git commit *)"
     ]
   }
 }
