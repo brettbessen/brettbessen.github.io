@@ -48,3 +48,15 @@ title: "Research"
 <a href="files/Bessen - Rejecting Representation - 2020.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
 <a href="files/Rejecting Representation - Supplemental Materials.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-plus"></i> Supplemental</a>
 <details><summary>Abstract</summary><p>Under what conditions do citizens favor deciding political issues by popular vote? Models of support for popular vote processes usually consider the influence of individual attitudes such as political trust and interest in politics. But much less is known about the effect of institutional variables on support for popular vote processes. This article builds on research showing that disaffection with elected officials shapes support for referendums by considering the influence of the party system. First, an analysis of multilevel data from twenty-four European democracies indicates that individuals are more supportive of referendums in countries with fewer effective political parties. Second, a mediation analysis provides evidence that the number of parties influences referendum support through individual-level political trust and external efficacy. Where there are fewer viable parties, feelings that elected officials are unresponsive tend to increase popular support for referendums. These findings suggest a trade-off between available representation by political parties and support for direct influence over public policy.</p></details>
+
+## Working Papers
+
+- Social Retrospection: Conversation Networks and Presidential Support in Brazil, *Revise and Resubmit*
+
+- Captured by the Ballot: Judicial Elections and Democratic Erosion in Mexico\
+<a href="files/additional materials/captured by the ballot - presentation.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-easel"></i> Slides</a>
+
+- Trust, Tasks, and Troops: Support for Military Governance in Mexico. With Rebecca Bell-Martin, Daira Arana Aguilar, and Perla Paloma Lepez.
+
+- Cosmopolitanism, Messaging, and Attitudes TowardRefugees in the United States. With Brendan Connell and Ken Stallman.
+
