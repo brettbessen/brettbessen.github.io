@@ -8,7 +8,7 @@ title: "Teaching"
 **Experiments and Causal Inference**
 Spring 2023–25 | Fall 2023\
 <a href="files/syllabuses/Experiments%20and%20Causal%20Inference%20-%20%20Spring%202025.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
-<a href="https://github.com/brettbessen/causal-inference-labs" class="btn btn-outline-secondary btn-xs"><i class="bi bi-code-slash"></i> R Labs</a>
+<a href="https://github.com/brettbessen/causal-inference-labs" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-code"></i> R Labs</a>
 
 <hr>
 
