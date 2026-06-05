@@ -1,57 +1,71 @@
-# Brett Bessen — Academic Website
+# CLAUDE.md
 
-## Project Overview
-Quarto website to replace current Google Sites page at https://www.brettbessen.com/.
-Will be hosted on GitHub Pages with the custom domain pointed from GoDaddy.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Structure
-- `index.qmd` — Home page (bio, two-column layout with headshot)
-- `research.qmd` — Publications with paper/supplemental/replication links
-- `teaching.qmd` — Course listing
-- `cv.qmd` — CV download link (points to `files/CV.pdf`)
-- `files/` — PDFs and other downloads
-  - `head_shot.jpeg` — Profile photo
-  - `CV.pdf` — Symlink to `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf`
-- `styles.css` — Custom styling
+## Brett Bessen — Academic Website
 
-## CV Sync
-`files/CV.pdf` is a symbolic link to the Dropbox/Overleaf CV. When Overleaf recompiles and Dropbox syncs, the site automatically serves the new PDF on the next `quarto render`/`quarto preview`. No manual copying needed.
+Quarto website for https://www.brettbessen.com/, hosted on GitHub Pages (`master` branch, `/docs` output dir). Custom domain via GoDaddy.
 
-To recreate the symlink if ever needed (run in bash):
+## Commands
+
+```bash
+# Local preview with live reload
+quarto preview
+
+# Build to docs/ (required before committing)
+quarto render
+
+# Full deploy
+quarto render && git add . && git commit -m "message" && git push
+```
+
+All commands run from the repo root. Quarto outputs to `docs/` (set in `_quarto.yml`); GitHub Pages serves from there.
+
+## Architecture
+
+Four pages (`index.qmd`, `research.qmd`, `teaching.qmd`, `cv.qmd`) plus `about.qmd`. Site config in `_quarto.yml`: Bootstrap **Cosmo** theme, custom `styles.css`, Google Analytics, `meta.html` injected into every page `<head>` for SEO.
+
+`files/` holds all downloadable assets: `CV.pdf` is a **symlink** to `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` — it auto-updates when Overleaf recompiles and Dropbox syncs; never copy the PDF manually. Syllabuses live in `files/syllabuses/`. Lab files live in `files/Labs/` (one subfolder per lab).
+
+## UI Patterns
+
+**Buttons** — all links use Bootstrap outline buttons with `btn-xs` (defined in `styles.css`):
+```html
+<a href="files/foo.pdf" class="btn btn-outline-secondary btn-xs">
+  <i class="bi bi-file-earmark-pdf"></i> Label
+</a>
+```
+Common Bootstrap icons used: `bi-file-earmark-pdf` (PDF), `bi-file-earmark-text` (supplemental), `bi-database` (replication), `bi-unlock` (open access), `bi-code-slash` (R labs).
+
+**Abstract toggles** — grey caret expand/collapse via native `<details>`:
+```html
+<details><summary>Abstract</summary><p>Text here.</p></details>
+```
+
+**Entry dividers** — `<hr>` between each publication or course block.
+
+## Research Page Conventions
+
+Each entry: bold title + authors, journal/year on same line with `·` separators, then buttons, then abstract toggle. Working papers under R&R show "Revise and Resubmit" without naming the journal.
+
+## Teaching Page Conventions
+
+Each course: bold title, semesters offered on the next line (with `\` line break), then buttons. The R Labs button for **Experiments and Causal Inference** links to `files/Labs/`.
+
+## Labs (`files/Labs/`)
+
+Folders contain `.Rmd`/`.R` source files, rendered `.html`/`.pdf` output, and supporting data. **LAPOP data files (`.dta` with "LAPOP" in the name) are proprietary and must never be committed.** Each lab folder that uses LAPOP data has a `README.md` instructing students to download the dataset from https://www.vanderbilt.edu/lapop/raw-data.php, with the specific dataset named.
+
+## CV Symlink
+
+To recreate if ever broken (run in bash):
 ```bash
 ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
   "C:/Users/L03534594/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/brettbessen-website/files/CV.pdf"
 ```
 
-## Status (as of 2026-04-05)
-- [x] Basic 4-page site created and previewing locally
-- [x] All publications added with links to papers, supplementals, replication files
-- [x] Social links added (Google Scholar, Twitter/X, LinkedIn, email)
-- [x] `files/` folder created for CV and other downloads
-- [x] CV symlinked from Dropbox/Overleaf — auto-updates when CV is recompiled
-- [x] Profile photo added to home page (two-column layout)
-- [x] Git repo initialized and pushed to GitHub as `brettbessen.github.io`
-- [x] GitHub Pages enabled (source: `master` branch, `/docs` folder)
-- [x] Site live at https://brettbessen.github.io/
-- [x] Custom domain `brettbessen.com` configured in GitHub Pages settings; DNS check successful
-- [x] GoDaddy DNS updated: 4 GitHub A records and www CNAME added; old Google records removed
-- [x] HTTPS enforced via GitHub Pages
-- [x] Rejecting Representation paper and supplemental PDFs added to `files/` and linked on research page
-- [x] Bio updated and proofread on home page
-- [x] SEO: hidden meta description and keywords added via `meta.html` included in page `<head>`
-- [x] Research page redesigned: title + metadata on one line, Bootstrap icon buttons (Open Access, Supplemental, Replication/PDF), grey caret abstract toggle, `<hr>` between entries
-
 ## Remaining Tasks
+
 - [ ] Submit site to Google Search Console
-- [ ] Add syllabus/course files to teaching page
 - [ ] Add course evaluations/reviews PDF to teaching page
 - [ ] Final review and turn off Google Sites
-
-## Deploy Workflow
-Edit `.qmd` files → `quarto render` → `git add . && git commit -m "message" && git push`
-
-## Preview
-```bash
-cd "C:\Users\L03534594\OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey\brettbessen-website"
-quarto preview
-```
