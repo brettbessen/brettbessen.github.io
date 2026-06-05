@@ -3,6 +3,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - CNAME
 
 website:
   title: "Brett R. Bessen"
