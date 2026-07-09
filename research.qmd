@@ -4,6 +4,13 @@ title: "Research"
 
 ## Publications
 
+**Social retrospection: conversation networks, performance evaluations, and candidate support** — 2026. Brett Bessen. *Journal of Elections, Public Opinion and Parties*.\
+<a href="https://doi.org/10.1080/17457289.2026.2693134" class="btn btn-outline-secondary btn-xs"><i class="bi bi-link-45deg"></i> Article</a>
+<a href="files/Social retrospection  conversation networks  performance evaluations  and candidate support.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+<details><summary>Abstract</summary><p>Voters' ability to assess the performance of elected leaders is central to theories of democratic accountability. I extend theories of retrospective voting by considering the influence of political discussion. Using a panel survey of Brazilian respondents, I examine the relationship between political disagreement in voters' conversation networks and changes in candidate support across party lines during President Lula da Silva's first term. I find that Brazilians with more disagreeing conversation partners are substantially more likely to update their views and support different candidates going into the next election. Further, I find suggestive evidence that network disagreement reduces support for Lula by producing more negative evaluations of his performance. The results indicate that conversation networks play a significant but underappreciated role in retrospective evaluations of elected leaders.</p></details>
+
+<hr>
+
 **Restoring institutional confidence in backsliding democracies: Evidence from Mexico** — 2025. Brett Bessen, Susan Stokes & Andrés Uribe. *Proceedings of the National Academy of Sciences*.\
 <a href="https://www.pnas.org/doi/10.1073/pnas.2516520122" class="btn btn-outline-secondary btn-xs"><i class="bi bi-unlock"></i> Open Access</a>
 <a href="https://www.pnas.org/doi/suppl/10.1073/pnas.2516520122/suppl_file/pnas.2516520122.sapp.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-plus"></i> Supplemental</a>
@@ -50,10 +57,6 @@ title: "Research"
 <details><summary>Abstract</summary><p>Under what conditions do citizens favor deciding political issues by popular vote? Models of support for popular vote processes usually consider the influence of individual attitudes such as political trust and interest in politics. But much less is known about the effect of institutional variables on support for popular vote processes. This article builds on research showing that disaffection with elected officials shapes support for referendums by considering the influence of the party system. First, an analysis of multilevel data from twenty-four European democracies indicates that individuals are more supportive of referendums in countries with fewer effective political parties. Second, a mediation analysis provides evidence that the number of parties influences referendum support through individual-level political trust and external efficacy. Where there are fewer viable parties, feelings that elected officials are unresponsive tend to increase popular support for referendums. These findings suggest a trade-off between available representation by political parties and support for direct influence over public policy.</p></details>
 
 ## Working Papers
-
-**Social Retrospection: Conversation Networks and Presidential Support in Brazil** — Brett Bessen. *Revise and Resubmit.*
-
-<hr>
 
 **Captured by the Ballot: Judicial Elections and Democratic Erosion in Mexico** — Brett Bessen.\
 <a href="files/additional materials/captured by the ballot - presentation.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-easel"></i> Slides</a>
