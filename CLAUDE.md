@@ -25,7 +25,7 @@ All commands run from the repo root. Quarto outputs to `docs/` (set in `_quarto.
 
 Four pages (`index.qmd`, `research.qmd`, `teaching.qmd`, `cv.qmd`) plus `about.qmd`. Site config in `_quarto.yml`: Bootstrap **Cosmo** theme, custom `styles.css`, Google Analytics, `meta.html` injected into every page `<head>` for SEO.
 
-`files/` holds all downloadable assets: `CV.pdf` is a **symlink** to `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` — it auto-updates when Overleaf recompiles and Dropbox syncs; never copy the PDF manually. Syllabuses live in `files/syllabuses/`. Lab files live in `files/Labs/` (one subfolder per lab).
+`files/` holds all downloadable assets: `CV.pdf` is a **symlink** to `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` — it auto-updates when Overleaf recompiles and Dropbox syncs; never copy the PDF manually. Syllabuses live in `files/syllabuses/`. `files/Labs/` is a local clone of the **separate** `causal-inference-labs` GitHub repo — it is gitignored in this repo (the teaching page's R Labs button links to that repo on GitHub, not to local files).
 
 ## UI Patterns
 
@@ -50,11 +50,11 @@ Each entry: bold title + authors, journal/year on same line with `·` separators
 
 ## Teaching Page Conventions
 
-Each course: bold title, semesters offered on the next line (with `\` line break), then buttons. The R Labs button for **Experiments and Causal Inference** links to `files/Labs/`.
+Each course: bold title, semesters offered on the next line (with `\` line break), then buttons. The R Labs button for **Experiments and Causal Inference** links to https://github.com/brettbessen/causal-inference-labs.
 
 ## Labs (`files/Labs/`)
 
-Folders contain `.Rmd`/`.R` source files, rendered `.html`/`.pdf` output, and supporting data. **LAPOP data files (`.dta` with "LAPOP" in the name) are proprietary and must never be committed.** Each lab folder that uses LAPOP data has a `README.md` instructing students to download the dataset from https://www.vanderbilt.edu/lapop/raw-data.php, with the specific dataset named.
+A local clone of the separate `causal-inference-labs` GitHub repo; gitignored in this repo. Folders contain `.Rmd`/`.R` source files, rendered `.html`/`.pdf` output, and supporting data. **LAPOP data files (`.dta` with "LAPOP" in the name) are proprietary and must never be committed** (in either repo). Each lab folder that uses LAPOP data has a `README.md` instructing students to download the dataset from https://www.vanderbilt.edu/lapop/raw-data.php, with the specific dataset named.
 
 ## CV Symlink
 

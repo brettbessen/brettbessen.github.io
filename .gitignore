@@ -1,2 +1,7 @@
 /.quarto/
 /_site/
+
+# Local clone of the separate causal-inference-labs repo (linked from the
+# teaching page via GitHub, not served from this site). Never commit it here —
+# it contains proprietary LAPOP data files and its own .git history.
+/files/Labs/
