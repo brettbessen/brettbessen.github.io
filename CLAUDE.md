@@ -25,7 +25,7 @@ All commands run from the repo root. Quarto outputs to `docs/` (set in `_quarto.
 
 Four pages (`index.qmd`, `research.qmd`, `teaching.qmd`, `cv.qmd`) plus `about.qmd`. Site config in `_quarto.yml`: Bootstrap **Cosmo** theme, custom `styles.css`, Google Analytics, `meta.html` injected into every page `<head>` for SEO.
 
-`files/` holds all downloadable assets: `CV.pdf` is a **symlink** to `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` — it auto-updates when Overleaf recompiles and Dropbox syncs; never copy the PDF manually. Syllabuses live in `files/syllabuses/`. `files/Labs/` is a local clone of the **separate** `causal-inference-labs` GitHub repo — it is gitignored in this repo (the teaching page's R Labs button links to that repo on GitHub, not to local files).
+`files/` holds all downloadable assets: `CV.pdf` is a **copy** of `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` (it was documented as a symlink, but native symlinks aren't permitted on this machine and the file had gone stale — discovered 2026-07-16). After recompiling the CV, re-copy the PDF here, then `quarto render` and push. Syllabuses live in `files/syllabuses/`. `files/Labs/` is a local clone of the **separate** `causal-inference-labs` GitHub repo — it is gitignored in this repo (the teaching page's R Labs button links to that repo on GitHub, not to local files).
 
 ## UI Patterns
 
@@ -56,13 +56,14 @@ Each course: bold title, semesters offered on the next line (with `\` line break
 
 A local clone of the separate `causal-inference-labs` GitHub repo; gitignored in this repo. Folders contain `.Rmd`/`.R` source files, rendered `.html`/`.pdf` output, and supporting data. **LAPOP data files (`.dta` with "LAPOP" in the name) are proprietary and must never be committed** (in either repo). Each lab folder that uses LAPOP data has a `README.md` instructing students to download the dataset from https://www.vanderbilt.edu/lapop/raw-data.php, with the specific dataset named.
 
-## CV Symlink
+## CV Update Workflow
 
-To recreate if ever broken (run in bash):
+The CV does not auto-update (see `files/` note above). To publish a new CV (run in bash):
 ```bash
-ln -s "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
+cp "C:/Users/L03534594/Dropbox/Apps/Overleaf/CV/CV.pdf" \
   "C:/Users/L03534594/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/brettbessen-website/files/CV.pdf"
 ```
+Then `quarto render`, commit, and push.
 
 ## Remaining Tasks
 
