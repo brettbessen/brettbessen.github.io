@@ -100,7 +100,10 @@ write_svg <- function(txt, path) {
   writeLines(txt, con, useBytes = FALSE)
 }
 
+# Each language's file is named for the abbreviation it uses in the text:
+# ncp (noncentrality parameter) in English, pnc (parametro de no centralidad)
+# in Spanish.
 dir.create("files", showWarnings = FALSE)
 write_svg(svg_for(en), "files/ncp-en.svg")
-write_svg(svg_for(es), "files/ncp-es.svg")
-cat("wrote files/ncp-en.svg and files/ncp-es.svg\n")
+write_svg(svg_for(es), "files/pnc-es.svg")
+cat("wrote files/ncp-en.svg and files/pnc-es.svg\n")
