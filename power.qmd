@@ -173,7 +173,7 @@ Usa la calculadora para ver cómo se compensan entre sí las tres palancas.
 
     <div class="pt-readout">
       <div class="pt-power-label" data-i18n="lbl-power">Power</div>
-      <div class="pt-power-num" id="out-power">42%</div>
+      <div class="pt-power-num" id="out-power">40.8%</div>
       <div class="pt-meter"><div class="pt-meter-fill" id="out-meter"></div>
         <div class="pt-meter-target" id="out-meter-target"></div></div>
       <div class="pt-verdict" id="out-verdict"></div>
@@ -181,7 +181,7 @@ Usa la calculadora para ver cómo se compensan entre sí las tres palancas.
       <div class="pt-derived">
         <div><span data-i18n="lbl-cohend">Cohen's <em>d</em> (SD units)</span><strong id="out-d">0.20</strong></div>
         <div><span data-i18n="lbl-ncp">Noncentrality <em>d</em>&radic;(<em>n</em>/2)</span><strong id="out-ncp">1.73</strong></div>
-        <div><span data-i18n="lbl-beta">Type II error rate &beta;</span><strong id="out-beta">58%</strong></div>
+        <div><span data-i18n="lbl-beta">Type II error rate &beta;</span><strong id="out-beta">59.2%</strong></div>
       </div>
     </div>
   </div>
@@ -295,7 +295,7 @@ Usa la calculadora para ver cómo se compensan entre sí las tres palancas.
 }
 #power-tool .pt-meter-fill {
   height: 100%;
-  width: 42%;
+  width: 40.8%;
   background: var(--pt-amber);
   transition: width 0.12s linear;
 }
@@ -614,7 +614,7 @@ Three things worth knowing about how the levers are modelled:
 
 **Effect size is the effect you want to detect, not the effect you hope to find.** Enter the smallest difference that would still matter substantively. Powering a study on an optimistic guess is the most common way to end up underpowered — and the effect you can *just* detect is, by construction, one you can only estimate imprecisely.
 
-**Noise reduction is expressed as $R^2$**, the share of outcome variance explained by your blocking variables or covariates. Adjusting for covariates reduces the residual SD to $\sigma\sqrt{1-R^2}$, which raises $d$ by exactly the same factor. This is why the effect-size and noise cards above are two views of one lever: only the ratio $\delta/\sigma$ matters. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test.
+**Noise reduction is expressed as $R^2$**, the share of outcome variance explained by your blocking variables or covariates. Adjusting for covariates reduces the residual SD to $\sigma\sqrt{1-R^2}$, which raises $d$ by the reciprocal of that factor, $1/\sqrt{1-R^2}$. This is why the effect-size and noise cards above are two views of one lever: only the ratio $\delta/\sigma$ matters. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test.
 
 **Power is the upper-tail probability only.** Rejecting the null in the *wrong* direction is not a success, so it does not count here. This is also R's convention, and it is why power approaches $\alpha/2$, not $\alpha$, as the effect goes to zero.
 
@@ -648,7 +648,7 @@ Tres cosas que vale la pena saber sobre cómo se modelan las palancas:
 
 **El tamaño del efecto es el que quieres detectar, no el que esperas encontrar.** Ingresa la diferencia más pequeña que aún importaría sustantivamente. Calcular la potencia con una estimación optimista es la manera más común de terminar subpotenciado —y el efecto que apenas puedes detectar es, por construcción, uno que solo puedes estimar con imprecisión.
 
-**La reducción de ruido se expresa como $R^2$**, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Ajustar por covariables reduce la DE residual a $\sigma\sqrt{1-R^2}$, lo que aumenta $d$ exactamente en ese mismo factor. Por eso las tarjetas de tamaño del efecto y de ruido de arriba son dos vistas de una misma palanca: solo importa la razón $\delta/\sigma$. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test.
+**La reducción de ruido se expresa como $R^2$**, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Ajustar por covariables reduce la DE residual a $\sigma\sqrt{1-R^2}$, lo que aumenta $d$ en el recíproco de ese factor, $1/\sqrt{1-R^2}$. Por eso las tarjetas de tamaño del efecto y de ruido de arriba son dos vistas de una misma palanca: solo importa la razón $\delta/\sigma$. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test.
 
 **La potencia es solo la probabilidad de cola superior.** Rechazar la hipótesis nula en la dirección *equivocada* no cuenta como éxito, así que aquí no se contabiliza. Esta también es la convención de R, y por eso la potencia se acerca a $\alpha/2$, no a $\alpha$, cuando el efecto tiende a cero.
 
