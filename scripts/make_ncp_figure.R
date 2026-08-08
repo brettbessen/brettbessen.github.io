@@ -90,7 +90,7 @@ es <- list(
   crit = paste0("t* = ", formatC(tcrit, digits = 2, format = "f")),
   xlab = "estad\u00edstico t",
   null = "nula (t central)",
-  alt2 = "efecto real (ncp = 2.8)",
+  alt2 = "efecto real (pnc = 2.8)",   # Spanish uses pnc: parametro de no centralidad
   pow  = paste0("potencia = ", formatC(100 * pow, digits = 0, format = "f"), "%")
 )
 

@@ -342,14 +342,14 @@ Both curves are <em>t</em> distributions with 298 degrees of freedom, the sample
 </ul>
 <p>Una forma de aumentar la potencia es aumentar el tamaño de la muestra. Pero nota que estas tres cosas se combinan en una sola cantidad. Si tu tratamiento mueve el resultado en <span class="math inline">\delta</span> y el resultado tiene desviación estándar <span class="math inline">\sigma</span>, el <em>efecto estandarizado</em> es <span class="math inline">d = \delta / \sigma</span>, y la potencia depende de</p>
 <p><span class="math display">
-\text{ncp} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
+\text{pnc} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
 </span></p>
 <details>
 <summary>
-¿Qué es “ncp”?
+¿Qué es “pnc”?
 </summary>
 <p>
-Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> indica qué tan lejos se desplaza. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con α = 0.05.
+Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> (pnc) indica qué tan lejos se desplaza. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con α = 0.05.
 </p>
 <figure class="ncp-fig figure">
 <img src="files/ncp-es.svg" alt="Dos distribuciones t: la t central bajo la hipótesis nula, centrada en cero, y una t no central desplazada 2.8 a la derecha. El área de la curva desplazada más allá del valor crítico t* = 1.97 está sombreada y etiquetada como 80% de potencia." class="figure-img">
