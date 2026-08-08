@@ -56,18 +56,25 @@
     "text": "English\n  Español"
   },
   {
-    "objectID": "power.html#what-units-is-the-effect-size-in",
-    "href": "power.html#what-units-is-the-effect-size-in",
+    "objectID": "power.html#power-calculator",
+    "href": "power.html#power-calculator",
     "title": "Statistical Power",
-    "section": "What units is the effect size in?",
-    "text": "What units is the effect size in?\n\\delta and \\sigma take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: d = \\delta/\\sigma is measured in standard deviations, so d = 0.2 means the treatment moves the outcome one-fifth of a standard deviation.\nThat ratio is Cohen’s d. You can use Cohen’s d to approximate your effect size by comparing your design to existing research. Cohen’s benchmarks are: 0.2 small effect, 0.5 medium effect, 0.8 large effect. But use these with caution. Effects in political behavior can fall well under 0.2. Designing around 0.5 can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.\nUse the calculator to see how the three levers trade off against each other."
+    "section": "Power Calculator",
+    "text": "Power Calculator"
   },
   {
-    "objectID": "power.html#en-qué-unidades-está-el-tamaño-del-efecto",
-    "href": "power.html#en-qué-unidades-está-el-tamaño-del-efecto",
+    "objectID": "power.html#calculadora-de-potencia",
+    "href": "power.html#calculadora-de-potencia",
     "title": "Statistical Power",
-    "section": "¿En qué unidades está el tamaño del efecto?",
-    "text": "¿En qué unidades está el tamaño del efecto?\n\\delta y \\sigma toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: d = \\delta/\\sigma se mide en desviaciones estándar, así que d = 0.2 significa que el tratamiento mueve el resultado un quinto de una desviación estándar.\nEsa razón es la d de Cohen. Puedes usar la d de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: 0.2 efecto pequeño, 0.5 efecto mediano, 0.8 efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de 0.2. Diseñar pensando en 0.5 puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.\nUsa la calculadora para ver cómo se compensan entre sí las tres palancas."
+    "section": "Calculadora de potencia",
+    "text": "Calculadora de potencia"
+  },
+  {
+    "objectID": "power.html#effect-size",
+    "href": "power.html#effect-size",
+    "title": "Statistical Power",
+    "section": "Effect Size",
+    "text": "Effect Size\nIn the equation above, \\delta and \\sigma take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: d = \\delta/\\sigma is measured in standard deviations, so d = 0.2 means the treatment moves the outcome one-fifth of a standard deviation.\nThat ratio is Cohen’s d. You can use Cohen’s d to approximate your effect size by comparing your design to existing research. Cohen’s benchmarks are: 0.2 small effect, 0.5 medium effect, 0.8 large effect. But use these with caution. Effects in political behavior can fall well under 0.2. Designing around 0.5 can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down."
   },
   {
     "objectID": "power.html#what-the-calculator-assumes",
@@ -82,6 +89,13 @@
     "title": "Statistical Power",
     "section": "Checking it against R",
     "text": "Checking it against R\nEvery number here can be reproduced in R. For the default design — \\delta = 0.3, \\sigma = 1.5, n = 150 per group:\npower.t.test(n = 150, delta = 0.3, sd = 1.5,\n             sig.level = 0.05, type = \"two.sample\")\n\n# With covariates explaining 30% of outcome variance,\n# the residual SD shrinks by sqrt(1 - 0.30):\npower.t.test(n = 150, delta = 0.3, sd = 1.5 * sqrt(1 - 0.30),\n             sig.level = 0.05, type = \"two.sample\")\nFor designs beyond two-group comparisons of means, use the pwr package, or simulate: generate data under an assumed effect, run your actual analysis, repeat a few thousand times, count how often you reject. Simulation is slower, but it handles the clustering, interactions, and non-normal outcomes that no closed-form calculator covers."
+  },
+  {
+    "objectID": "power.html#tamaño-del-efecto",
+    "href": "power.html#tamaño-del-efecto",
+    "title": "Statistical Power",
+    "section": "Tamaño del efecto",
+    "text": "Tamaño del efecto\nEn la ecuación de arriba, \\delta y \\sigma toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: d = \\delta/\\sigma se mide en desviaciones estándar, así que d = 0.2 significa que el tratamiento mueve el resultado un quinto de una desviación estándar.\nEsa razón es la d de Cohen. Puedes usar la d de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: 0.2 efecto pequeño, 0.5 efecto mediano, 0.8 efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de 0.2. Diseñar pensando en 0.5 puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja."
   },
   {
     "objectID": "power.html#qué-supone-la-calculadora",

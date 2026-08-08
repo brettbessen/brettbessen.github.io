@@ -327,11 +327,8 @@ Both curves are <em>t</em> distributions with 298 degrees of freedom, the sample
 <li><strong>Collect more data</strong> — raise <span class="math inline">n</span>.</li>
 </ol>
 <p><span class="math inline">\delta</span> and <span class="math inline">\sigma</span> enter as a <em>ratio</em>: halving the noise buys exactly what doubling the effect buys. And <span class="math inline">n</span> enters under a <strong>square root</strong> — quadrupling your sample only doubles the signal. This is why “collect more data” is usually the most expensive lever, and why hard thinking about your treatment and your measurement is usually the cheapest.</p>
-<section id="what-units-is-the-effect-size-in" class="level2">
-<h2 class="anchored" data-anchor-id="what-units-is-the-effect-size-in">What units is the effect size in?</h2>
-<p><span class="math inline">\delta</span> and <span class="math inline">\sigma</span> take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: <span class="math inline">d = \delta/\sigma</span> is measured in standard deviations, so <span class="math inline">d = 0.2</span> means the treatment moves the outcome one-fifth of a standard deviation.</p>
-<p>That ratio is <strong>Cohen’s <span class="math inline">d</span></strong>. You can use Cohen’s <span class="math inline">d</span> to approximate your effect size by comparing your design to existing research. Cohen’s benchmarks are: <span class="math inline">0.2</span> small effect, <span class="math inline">0.5</span> medium effect, <span class="math inline">0.8</span> large effect. But use these with caution. Effects in political behavior can fall well under <span class="math inline">0.2</span>. Designing around <span class="math inline">0.5</span> can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.</p>
-<p>Use the calculator to see how the three levers trade off against each other.</p>
+<section id="power-calculator" class="level2">
+<h2 class="anchored" data-anchor-id="power-calculator">Power Calculator</h2>
 </section>
 </div>
 <div class="lang-es">
@@ -367,11 +364,8 @@ Ambas curvas son distribuciones <em>t</em> con 298 grados de libertad, el tamañ
 <li><strong>Recolectar más datos</strong> — aumenta <span class="math inline">n</span>.</li>
 </ol>
 <p><span class="math inline">\delta</span> y <span class="math inline">\sigma</span> entran como una <em>razón</em>: reducir el ruido a la mitad logra exactamente lo mismo que duplicar el efecto. Y <span class="math inline">n</span> entra bajo una <strong>raíz cuadrada</strong> — cuadruplicar tu muestra solo duplica la señal. Por eso “recolectar más datos” suele ser la palanca más cara, y pensar bien tu tratamiento y tu medición suele ser la más barata.</p>
-<section id="en-qué-unidades-está-el-tamaño-del-efecto" class="level2">
-<h2 class="anchored" data-anchor-id="en-qué-unidades-está-el-tamaño-del-efecto">¿En qué unidades está el tamaño del efecto?</h2>
-<p><span class="math inline">\delta</span> y <span class="math inline">\sigma</span> toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: <span class="math inline">d = \delta/\sigma</span> se mide en desviaciones estándar, así que <span class="math inline">d = 0.2</span> significa que el tratamiento mueve el resultado un quinto de una desviación estándar.</p>
-<p>Esa razón es la <strong><span class="math inline">d</span> de Cohen</strong>. Puedes usar la <span class="math inline">d</span> de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: <span class="math inline">0.2</span> efecto pequeño, <span class="math inline">0.5</span> efecto mediano, <span class="math inline">0.8</span> efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de <span class="math inline">0.2</span>. Diseñar pensando en <span class="math inline">0.5</span> puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.</p>
-<p>Usa la calculadora para ver cómo se compensan entre sí las tres palancas.</p>
+<section id="calculadora-de-potencia" class="level2">
+<h2 class="anchored" data-anchor-id="calculadora-de-potencia">Calculadora de potencia</h2>
 </section>
 </div>
 <div id="power-tool">
@@ -850,6 +844,11 @@ Ambas curvas son distribuciones <em>t</em> con 298 grados de libertad, el tamañ
 })();
 </script>
 <div class="lang-en">
+<section id="effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="effect-size">Effect Size</h2>
+<p>In the equation above, <span class="math inline">\delta</span> and <span class="math inline">\sigma</span> take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: <span class="math inline">d = \delta/\sigma</span> is measured in standard deviations, so <span class="math inline">d = 0.2</span> means the treatment moves the outcome one-fifth of a standard deviation.</p>
+<p>That ratio is <strong>Cohen’s <span class="math inline">d</span></strong>. You can use Cohen’s <span class="math inline">d</span> to approximate your effect size by comparing your design to existing research. Cohen’s benchmarks are: <span class="math inline">0.2</span> small effect, <span class="math inline">0.5</span> medium effect, <span class="math inline">0.8</span> large effect. But use these with caution. Effects in political behavior can fall well under <span class="math inline">0.2</span>. Designing around <span class="math inline">0.5</span> can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.</p>
+</section>
 <section id="what-the-calculator-assumes" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-calculator-assumes">What the calculator assumes</h2>
 <p>The design is the simplest useful one: <strong>two groups, equal sizes, comparing means, two-sided test</strong>. Power comes from the exact noncentral <span class="math inline">t</span> distribution rather than a large-sample normal approximation, so the numbers match R’s <code>power.t.test()</code>.</p>
@@ -873,6 +872,11 @@ Ambas curvas son distribuciones <em>t</em> con 298 grados de libertad, el tamañ
 </section>
 </div>
 <div class="lang-es">
+<section id="tamaño-del-efecto" class="level2">
+<h2 class="anchored" data-anchor-id="tamaño-del-efecto">Tamaño del efecto</h2>
+<p>En la ecuación de arriba, <span class="math inline">\delta</span> y <span class="math inline">\sigma</span> toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: <span class="math inline">d = \delta/\sigma</span> se mide en desviaciones estándar, así que <span class="math inline">d = 0.2</span> significa que el tratamiento mueve el resultado un quinto de una desviación estándar.</p>
+<p>Esa razón es la <strong><span class="math inline">d</span> de Cohen</strong>. Puedes usar la <span class="math inline">d</span> de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: <span class="math inline">0.2</span> efecto pequeño, <span class="math inline">0.5</span> efecto mediano, <span class="math inline">0.8</span> efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de <span class="math inline">0.2</span>. Diseñar pensando en <span class="math inline">0.5</span> puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.</p>
+</section>
 <section id="qué-supone-la-calculadora" class="level2">
 <h2 class="anchored" data-anchor-id="qué-supone-la-calculadora">Qué supone la calculadora</h2>
 <p>El diseño es el más simple y útil: <strong>dos grupos, tamaños iguales, comparación de medias, prueba de dos colas</strong>. La potencia se calcula con la distribución <span class="math inline">t</span> no central exacta, no con una aproximación normal de muestra grande, así que los números coinciden con <code>power.t.test()</code> de R.</p>
