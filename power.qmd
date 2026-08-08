@@ -56,7 +56,7 @@ body.show-es .lang-en { display: none; }
 
 ::: {.lang-en}
 
-Statistical power is the probability that your study detects an effect that is really there. It is not a property of your data — it is a property of your *design*, fixed before you collect anything.
+Statistical power is the probability that your study detects an effect that is really there.
 
 Power depends on exactly three things:
 
@@ -92,7 +92,7 @@ Use the calculator to see how the three levers trade off against each other.
 
 ::: {.lang-es}
 
-La potencia estadística es la probabilidad de que tu estudio detecte un efecto que realmente existe. No es una propiedad de tus datos, sino de tu *diseño*, y queda fija antes de que recolectes nada.
+La potencia estadística es la probabilidad de que tu estudio detecte un efecto que realmente existe.
 
 La potencia depende exactamente de tres cosas:
 
