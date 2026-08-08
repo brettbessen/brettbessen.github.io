@@ -18,6 +18,8 @@ website:
         text: Research
       - href: teaching.qmd
         text: Teaching
+      - href: tools.qmd
+        text: Tools
       - href: cv.qmd
         text: CV
 
@@ -27,3 +29,8 @@ format:
     css: styles.css
     toc: false
     include-in-header: meta.html
+    # Use KaTeX, not MathJax. Quarto 1.4's MathJax setup injects a
+    # render-blocking <script src> from polyfill.io, which is dead
+    # (HTTP 520) and stalls HTML parsing before <body> is created —
+    # any page with math hangs. KaTeX loads from jsdelivr instead.
+    html-math-method: katex

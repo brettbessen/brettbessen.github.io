@@ -9,6 +9,7 @@ title: "Teaching"
 Spring 2023–25 | Fall 2023\
 <a href="files/syllabuses/Experiments%20and%20Causal%20Inference%20-%20%20Spring%202025.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
 <a href="https://github.com/brettbessen/causal-inference-labs" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-code"></i> R Labs</a>
+<a href="power.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-calculator"></i> Power Calculator</a>
 
 <hr>
 
@@ -21,6 +22,7 @@ Fall 2025 | Spring–Fall 2026\
 **Research Methods** (Senior Seminar)
 Fall 2023–25 | Spring 2023–26\
 <a href="files/syllabuses/Research%20Methods%20-%20Spring%202026.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
+<a href="power.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-calculator"></i> Power Calculator</a>
 
 <hr>
 

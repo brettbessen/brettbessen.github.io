@@ -1,0 +1,33 @@
+---
+title: "Tools"
+---
+
+<div id="tools-page">
+
+<p class="tools-intro">A couple of small tools I've built and use in my own teaching and research.</p>
+
+<div class="tools-grid">
+
+<div class="tool-card">
+<div class="tool-card-icon"><i class="bi bi-calculator"></i></div>
+<h3 class="tool-card-title">Statistical Power Calculator</h3>
+<p class="tool-card-tagline">Interactive teaching tool for study design.</p>
+<p class="tool-card-body">Shows how power depends on effect size, outcome variance, and sample size, and how the three design levers trade off. Built for thesis students. Uses the exact noncentral <em>t</em> distribution and matches R's <code>power.t.test()</code>.</p>
+<div class="tool-card-actions">
+<a href="power.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-calculator"></i> Open Calculator</a>
+</div>
+</div>
+
+<div class="tool-card">
+<div class="tool-card-icon"><i class="bi bi-github"></i></div>
+<h3 class="tool-card-title">SNII Application Skill</h3>
+<p class="tool-card-tagline">Claude Code skill for SNII applications.</p>
+<p class="tool-card-body">Helps researchers in Mexico prepare SNII applications. Invoked with <code>/sni</code>, it reads your CV, checks the official convocatoria and evaluation criteria, flags gaps, and organizes an evidence folder with a running checklist. Supports every level, Candidato/a through Investigador/a Emérito/a.</p>
+<div class="tool-card-actions">
+<a href="https://github.com/brettbessen/claude-skill-snii" class="btn btn-outline-secondary btn-xs"><i class="bi bi-github"></i> View on GitHub</a>
+</div>
+</div>
+
+</div>
+
+</div>

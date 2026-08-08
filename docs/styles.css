@@ -48,3 +48,99 @@ hr {
   border: none;
   border-top: 1px solid #dee2e6;
 }
+
+/* =========================================================
+   Tools page (tools.qmd) — scoped to #tools-page so nothing
+   here can leak into other pages.
+   ========================================================= */
+#tools-page {
+  --tools-accent: #2780e3;
+  --tools-accent-soft: #eaf2fc;
+  --tools-card-bg: #ffffff;
+  --tools-card-border: #e3e7eb;
+  --tools-card-shadow: rgba(20, 30, 45, 0.06);
+  --tools-card-shadow-hover: rgba(20, 30, 45, 0.12);
+  --tools-text-muted: #5a6472;
+}
+
+#tools-page .tools-intro {
+  color: var(--tools-text-muted);
+  font-size: 1.02em;
+  margin-bottom: 1.4em;
+}
+
+#tools-page .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1em;
+  margin-top: 0.5em;
+}
+
+#tools-page .tool-card {
+  background: var(--tools-card-bg);
+  border: 1px solid var(--tools-card-border);
+  border-radius: 10px;
+  padding: 1.1em 1.2em 1em;
+  box-shadow: 0 2px 8px var(--tools-card-shadow);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+#tools-page .tool-card:hover {
+  box-shadow: 0 6px 16px var(--tools-card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+#tools-page .tool-card-icon {
+  color: var(--tools-accent);
+  background: var(--tools-accent-soft);
+  width: 2em;
+  height: 2em;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05em;
+  margin-bottom: 0.55em;
+}
+
+#tools-page .tool-card-title {
+  margin: 0 0 0.2em;
+  font-size: 1.05em;
+}
+
+#tools-page .tool-card-tagline {
+  color: var(--tools-accent);
+  font-weight: 600;
+  font-size: 0.86em;
+  margin: 0 0 0.55em;
+}
+
+#tools-page .tool-card-body {
+  font-size: 0.89em;
+  color: #333;
+  margin: 0 0 0.6em;
+}
+
+#tools-page .tool-card-list {
+  font-size: 0.92em;
+  color: #333;
+  margin: 0 0 0.8em;
+  padding-left: 1.2em;
+}
+
+#tools-page .tool-card-list li {
+  margin-bottom: 0.3em;
+}
+
+#tools-page .tool-card-actions {
+  margin-top: auto;
+  padding-top: 0.4em;
+}
+
+@media (max-width: 600px) {
+  #tools-page .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
