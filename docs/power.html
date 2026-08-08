@@ -295,14 +295,14 @@ body.show-es .lang-en { display: none; }
 })();
 </script>
 <div class="lang-en">
-<p>Statistical power is the probability that your study detects an effect that is really there.</p>
-<p>Power depends on exactly three things:</p>
+<p>How many respondents do I need for my study? One way to think about this is in terms of <strong>statistical power</strong>. If there is an effect of your treatment, you want to be able to detect it and distinguish it from zero.</p>
+<p>Statistical power is the probability that your study detects an effect that is really there, the true positive rate. Statistical power depends on three things:</p>
 <ul>
 <li><strong>the size of the effect</strong> you are trying to detect,</li>
 <li><strong>the amount of noise</strong> in your outcome, and</li>
-<li><strong>the size of your sample</strong>.</li>
+<li><strong>the size of your sample</strong> (number of respondents).</li>
 </ul>
-<p>These three combine into one quantity. If your treatment moves the outcome by <span class="math inline">\delta</span> and the outcome has standard deviation <span class="math inline">\sigma</span>, the <em>standardized effect</em> is <span class="math inline">d = \delta / \sigma</span>, and power is driven by</p>
+<p>One way to increase power is to increase the sample size. But note that these three things combine into one quantity. If your treatment moves the outcome by <span class="math inline">\delta</span> and the outcome has standard deviation <span class="math inline">\sigma</span>, the <em>standardized effect</em> is <span class="math inline">d = \delta / \sigma</span>, and power is driven by</p>
 <p><span class="math display">
 \text{ncp} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
 </span></p>
@@ -311,13 +311,16 @@ body.show-es .lang-en { display: none; }
 What is that “ncp”?
 </summary>
 <p>
-Under the null, your <em>t</em>-statistic follows the usual central <em>t</em> distribution, centered on zero. When there is a real effect it follows a <em>noncentral</em> <em>t</em> — same family, shifted away from zero — and the <strong>noncentrality parameter</strong> is how far it shifts. Read it as the true effect expressed in standard errors: roughly the <em>t</em>-statistic you should expect to get. Power is the area of that shifted distribution past your critical value, so a noncentrality near 2.8 gives 80% power at α = 0.05.
+Read it as the true effect expressed in standard errors: roughly the <em>t</em>-statistic you should expect to get. Under the null, your <em>t</em>-statistic follows the usual central <em>t</em> distribution, centered on zero. When there is a real effect it follows a <em>noncentral</em> <em>t</em> — same family, shifted away from zero — and the <strong>noncentrality parameter</strong> is how far it shifts. Power is the area of that shifted distribution past your critical value, so a noncentrality near 2.8 gives 80% power at α = 0.05.
 </p>
-<p>
-To see it, plot <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> against <code>curve(dt(x, df = 50), -4, 8)</code>. For more, see Cohen (1988) or Baguley (2004).
-</p>
+<figure class="ncp-fig figure">
+<img src="files/ncp-en.svg" alt="Two t distributions: the central t under the null, centered at zero, and a noncentral t shifted right by 2.8. The area of the shifted curve beyond the critical value t* = 1.97 is shaded and labelled 80% power." class="figure-img">
+<figcaption>
+Both curves are <em>t</em> distributions with 298 degrees of freedom, the sample size the calculator opens with (<em>n</em> = 150 per group). A real effect slides the distribution to the right by the noncentrality parameter; the 2.8 drawn here is the 80%-power benchmark, not the effect size the calculator opens with. Power (blue) is the share of the shifted curve past the critical value <em>t</em>* = 1.97; the red sliver is the α/2 = 2.5% the null curve leaves in the same region, the false positives.
+</figcaption>
+</figure>
 </details>
-<p>You have <strong>three levers</strong>:</p>
+<p>You have <strong>three levers</strong> to increase power:</p>
 <ol type="1">
 <li><strong>Make the effect bigger</strong> — design a stronger, clearer treatment.</li>
 <li><strong>Make the noise smaller</strong> — block, add covariates, use a better-measured outcome.</li>
@@ -327,19 +330,19 @@ To see it, plot <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> against <co
 <section id="what-units-is-the-effect-size-in" class="level2">
 <h2 class="anchored" data-anchor-id="what-units-is-the-effect-size-in">What units is the effect size in?</h2>
 <p><span class="math inline">\delta</span> and <span class="math inline">\sigma</span> take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: <span class="math inline">d = \delta/\sigma</span> is measured in standard deviations, so <span class="math inline">d = 0.2</span> means the treatment moves the outcome one-fifth of a standard deviation.</p>
-<p>That ratio is <strong>Cohen’s <span class="math inline">d</span></strong>. Standardizing lets you borrow an effect size from work that measured your outcome on a different scale, which is how you guess at <span class="math inline">\delta</span> before you have data of your own. Cohen’s benchmarks are: <span class="math inline">0.2</span> small, <span class="math inline">0.5</span> medium, <span class="math inline">0.8</span> large. But use these with caution. Effects in political behavior can fall well under <span class="math inline">0.2</span>; designing around <span class="math inline">0.5</span> can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade it down.</p>
+<p>That ratio is <strong>Cohen’s <span class="math inline">d</span></strong>. You can use Cohen’s <span class="math inline">d</span> to approximate your effect size by comparing your design to existing research. Cohen’s benchmarks are: <span class="math inline">0.2</span> small effect, <span class="math inline">0.5</span> medium effect, <span class="math inline">0.8</span> large effect. But use these with caution. Effects in political behavior can fall well under <span class="math inline">0.2</span>. Designing around <span class="math inline">0.5</span> can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.</p>
 <p>Use the calculator to see how the three levers trade off against each other.</p>
 </section>
 </div>
 <div class="lang-es">
-<p>La potencia estadística es la probabilidad de que tu estudio detecte un efecto que realmente existe.</p>
-<p>La potencia depende exactamente de tres cosas:</p>
+<p>¿Cuántos encuestados necesito para mi estudio? Una forma de pensarlo es en términos de la <strong>potencia estadística</strong>. Si tu tratamiento tiene un efecto, quieres poder detectarlo y distinguirlo de cero.</p>
+<p>La potencia estadística es la probabilidad de que tu estudio detecte un efecto que realmente existe, la tasa de verdaderos positivos. La potencia estadística depende de tres cosas:</p>
 <ul>
 <li><strong>el tamaño del efecto</strong> que buscas detectar,</li>
 <li><strong>la cantidad de ruido</strong> en tu variable de resultado, y</li>
-<li><strong>el tamaño de tu muestra</strong>.</li>
+<li><strong>el tamaño de tu muestra</strong> (número de encuestados).</li>
 </ul>
-<p>Estas tres se combinan en una sola cantidad. Si tu tratamiento mueve el resultado en <span class="math inline">\delta</span> y el resultado tiene desviación estándar <span class="math inline">\sigma</span>, el <em>efecto estandarizado</em> es <span class="math inline">d = \delta / \sigma</span>, y la potencia depende de</p>
+<p>Una forma de aumentar la potencia es aumentar el tamaño de la muestra. Pero nota que estas tres cosas se combinan en una sola cantidad. Si tu tratamiento mueve el resultado en <span class="math inline">\delta</span> y el resultado tiene desviación estándar <span class="math inline">\sigma</span>, el <em>efecto estandarizado</em> es <span class="math inline">d = \delta / \sigma</span>, y la potencia depende de</p>
 <p><span class="math display">
 \text{ncp} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
 </span></p>
@@ -348,13 +351,16 @@ To see it, plot <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> against <co
 ¿Qué es eso de “ncp”?
 </summary>
 <p>
-Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> indica qué tan lejos se desplaza. Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con α = 0.05.
+Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> indica qué tan lejos se desplaza. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con α = 0.05.
 </p>
-<p>
-Para verlo, grafica <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> junto con <code>curve(dt(x, df = 50), -4, 8)</code>. Para más detalle, consulta Cohen (1988) o Baguley (2004).
-</p>
+<figure class="ncp-fig figure">
+<img src="files/ncp-es.svg" alt="Dos distribuciones t: la t central bajo la hipótesis nula, centrada en cero, y una t no central desplazada 2.8 a la derecha. El área de la curva desplazada más allá del valor crítico t* = 1.97 está sombreada y etiquetada como 80% de potencia." class="figure-img">
+<figcaption>
+Ambas curvas son distribuciones <em>t</em> con 298 grados de libertad, el tamaño de muestra con el que abre la calculadora (<em>n</em> = 150 por grupo). Un efecto real desplaza la distribución hacia la derecha por el parámetro de no centralidad; el 2.8 que se dibuja aquí es el punto de referencia del 80% de potencia, no el tamaño del efecto con el que abre la calculadora. La potencia (azul) es la parte de esa curva desplazada más allá del valor crítico <em>t</em>* = 1.97; la franja roja es el α/2 = 2.5% que la curva nula deja en esa misma región, los falsos positivos.
+</figcaption>
+</figure>
 </details>
-<p>Tienes <strong>tres palancas</strong>:</p>
+<p>Tienes <strong>tres palancas</strong> para aumentar la potencia:</p>
 <ol type="1">
 <li><strong>Agrandar el efecto</strong> — diseña un tratamiento más fuerte y más claro.</li>
 <li><strong>Reducir el ruido</strong> — usa bloques, añade covariables, mide mejor tu resultado.</li>
@@ -364,7 +370,7 @@ Para verlo, grafica <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> junto c
 <section id="en-qué-unidades-está-el-tamaño-del-efecto" class="level2">
 <h2 class="anchored" data-anchor-id="en-qué-unidades-está-el-tamaño-del-efecto">¿En qué unidades está el tamaño del efecto?</h2>
 <p><span class="math inline">\delta</span> y <span class="math inline">\sigma</span> toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: <span class="math inline">d = \delta/\sigma</span> se mide en desviaciones estándar, así que <span class="math inline">d = 0.2</span> significa que el tratamiento mueve el resultado un quinto de una desviación estándar.</p>
-<p>Esa razón es la <strong><span class="math inline">d</span> de Cohen</strong>. Estandarizar te permite tomar prestado un tamaño del efecto de un estudio que midió tu resultado en otra escala, que es como se estima <span class="math inline">\delta</span> antes de tener datos propios. Los puntos de referencia de Cohen son: <span class="math inline">0.2</span> pequeño, <span class="math inline">0.5</span> mediano, <span class="math inline">0.8</span> grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de <span class="math inline">0.2</span>; diseñar pensando en <span class="math inline">0.5</span> puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.</p>
+<p>Esa razón es la <strong><span class="math inline">d</span> de Cohen</strong>. Puedes usar la <span class="math inline">d</span> de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: <span class="math inline">0.2</span> efecto pequeño, <span class="math inline">0.5</span> efecto mediano, <span class="math inline">0.8</span> efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de <span class="math inline">0.2</span>. Diseñar pensando en <span class="math inline">0.5</span> puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.</p>
 <p>Usa la calculadora para ver cómo se compensan entre sí las tres palancas.</p>
 </section>
 </div>
@@ -846,10 +852,10 @@ Para verlo, grafica <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> junto c
 <div class="lang-en">
 <section id="what-the-calculator-assumes" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-calculator-assumes">What the calculator assumes</h2>
-<p>The design is the simplest useful one: <strong>two groups, equal sizes, comparing means, two-sided test</strong>. Power comes from the exact noncentral <span class="math inline">t</span> distribution rather than a large-sample normal approximation, so the numbers match R’s <code>power.t.test()</code> to eight decimal places.</p>
+<p>The design is the simplest useful one: <strong>two groups, equal sizes, comparing means, two-sided test</strong>. Power comes from the exact noncentral <span class="math inline">t</span> distribution rather than a large-sample normal approximation, so the numbers match R’s <code>power.t.test()</code>.</p>
 <p>Three things worth knowing about how the levers are modelled:</p>
 <p><strong>Effect size is the effect you want to detect, not the effect you hope to find.</strong> Enter the smallest difference that would still matter substantively. Powering a study on an optimistic guess is the most common way to end up underpowered — and the effect you can <em>just</em> detect is, by construction, one you can only estimate imprecisely.</p>
-<p><strong>Noise reduction is expressed as <span class="math inline">R^2</span></strong>, the share of outcome variance explained by your blocking variables or covariates. Adjusting for covariates reduces the residual SD to <span class="math inline">\sigma\sqrt{1-R^2}</span>, which raises <span class="math inline">d</span> by the reciprocal of that factor, <span class="math inline">1/\sqrt{1-R^2}</span>. This is why the effect-size and noise cards above are two views of one lever: only the ratio <span class="math inline">\delta/\sigma</span> matters. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test.</p>
+<p><strong>Noise reduction is expressed as <span class="math inline">R^2</span></strong>, the share of outcome variance explained by your blocking variables or covariates. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test.</p>
 <p><strong>Power is the upper-tail probability only.</strong> Rejecting the null in the <em>wrong</em> direction is not a success, so it does not count here. This is also R’s convention, and it is why power approaches <span class="math inline">\alpha/2</span>, not <span class="math inline">\alpha</span>, as the effect goes to zero.</p>
 <p>The calculator does not subtract degrees of freedom for covariates. With <span class="math inline">k</span> covariates the residual df is <span class="math inline">2n - 2 - k</span>; the effect on power is negligible unless <span class="math inline">k</span> is large relative to <span class="math inline">n</span>, but it is not exactly zero.</p>
 </section>
@@ -869,10 +875,10 @@ Para verlo, grafica <code>curve(dt(x, df = 50, ncp = 2.8), -4, 8)</code> junto c
 <div class="lang-es">
 <section id="qué-supone-la-calculadora" class="level2">
 <h2 class="anchored" data-anchor-id="qué-supone-la-calculadora">Qué supone la calculadora</h2>
-<p>El diseño es el más simple y útil: <strong>dos grupos, tamaños iguales, comparación de medias, prueba de dos colas</strong>. La potencia se calcula con la distribución <span class="math inline">t</span> no central exacta, no con una aproximación normal de muestra grande, así que los números coinciden con <code>power.t.test()</code> de R hasta ocho decimales.</p>
+<p>El diseño es el más simple y útil: <strong>dos grupos, tamaños iguales, comparación de medias, prueba de dos colas</strong>. La potencia se calcula con la distribución <span class="math inline">t</span> no central exacta, no con una aproximación normal de muestra grande, así que los números coinciden con <code>power.t.test()</code> de R.</p>
 <p>Tres cosas que vale la pena saber sobre cómo se modelan las palancas:</p>
 <p><strong>El tamaño del efecto es el que quieres detectar, no el que esperas encontrar.</strong> Ingresa la diferencia más pequeña que aún importaría sustantivamente. Calcular la potencia con una estimación optimista es la manera más común de terminar subpotenciado —y el efecto que apenas puedes detectar es, por construcción, uno que solo puedes estimar con imprecisión.</p>
-<p><strong>La reducción de ruido se expresa como <span class="math inline">R^2</span></strong>, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Ajustar por covariables reduce la DE residual a <span class="math inline">\sigma\sqrt{1-R^2}</span>, lo que aumenta <span class="math inline">d</span> en el recíproco de ese factor, <span class="math inline">1/\sqrt{1-R^2}</span>. Por eso las tarjetas de tamaño del efecto y de ruido de arriba son dos vistas de una misma palanca: solo importa la razón <span class="math inline">\delta/\sigma</span>. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test.</p>
+<p><strong>La reducción de ruido se expresa como <span class="math inline">R^2</span></strong>, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test.</p>
 <p><strong>La potencia es solo la probabilidad de cola superior.</strong> Rechazar la hipótesis nula en la dirección <em>equivocada</em> no cuenta como éxito, así que aquí no se contabiliza. Esta también es la convención de R, y por eso la potencia se acerca a <span class="math inline">\alpha/2</span>, no a <span class="math inline">\alpha</span>, cuando el efecto tiende a cero.</p>
 <p>La calculadora no resta grados de libertad por las covariables. Con <span class="math inline">k</span> covariables, los grados de libertad residuales son <span class="math inline">2n - 2 - k</span>; el efecto sobre la potencia es despreciable salvo que <span class="math inline">k</span> sea grande en relación con <span class="math inline">n</span>, pero no es exactamente cero.</p>
 </section>

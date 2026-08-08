@@ -42,6 +42,24 @@ details[open] p {
   color: #333;
 }
 
+/* Noncentrality figure inside the power page's details block */
+.ncp-fig {
+  margin: 0.9em 0 0.2em;
+}
+.ncp-fig img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+.ncp-fig figcaption {
+  font-size: 0.85em;
+  color: #6c757d;
+  line-height: 1.45;
+  max-width: 640px;
+  margin-top: 0.35em;
+}
+
 /* Entry dividers */
 hr {
   margin: 1.2em 0;
