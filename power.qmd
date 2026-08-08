@@ -88,6 +88,8 @@ $\delta$ and $\sigma$ enter as a *ratio*: halving the noise buys exactly what do
 
 ## Power Calculator
 
+Use the calculator to see how changing these quantities affects statistical power:
+
 :::
 
 ::: {.lang-es}
@@ -122,6 +124,8 @@ Tienes **tres palancas** para aumentar la potencia:
 $\delta$ y $\sigma$ entran como una *razón*: reducir el ruido a la mitad logra exactamente lo mismo que duplicar el efecto. Y $n$ entra bajo una **raíz cuadrada** — cuadruplicar tu muestra solo duplica la señal. Por eso "recolectar más datos" suele ser la palanca más cara, y pensar bien tu tratamiento y tu medición suele ser la más barata.
 
 ## Calculadora de potencia
+
+Usa la calculadora para ver cómo cambia la potencia estadística al modificar estas cantidades:
 
 :::
 
