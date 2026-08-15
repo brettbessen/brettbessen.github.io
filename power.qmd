@@ -71,7 +71,7 @@ $$
 \text{ncp} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
 $$
 
-<details><summary>What is "ncp"?</summary><p>Read it as the true effect expressed in standard errors: roughly the <em>t</em>-statistic you should expect to get. Under the null, your <em>t</em>-statistic follows the usual central <em>t</em> distribution, centered on zero. When there is a real effect it follows a <em>noncentral</em> <em>t</em> — same family, shifted away from zero — and the <strong>noncentrality parameter</strong> is how far it shifts. Power is the area of that shifted distribution past your critical value, so a noncentrality near 2.8 gives 80% power at &alpha; = 0.05.</p>
+<details><summary>What is "ncp"?</summary><p>Read it as the true effect expressed in standard errors: roughly the <em>t</em>-statistic you should expect to get. Under the null, your <em>t</em>-statistic follows the usual central <em>t</em> distribution, centered on zero. When there is a real effect it follows a <em>noncentral</em> <em>t</em> — same family, shifted away from zero — and the <strong>noncentrality parameter</strong> is how far it shifts. Power is the area of that shifted distribution past your critical value, so a noncentrality near 2.8 gives 80% power at &alpha; = 0.05. The formula above is the noncentrality parameter for the design assumed here: two groups of equal size, with <em>n</em> observations in each.</p>
 <figure class="ncp-fig">
 <img src="files/ncp-en.svg" alt="Two t distributions: the central t under the null, centered at zero, and a noncentral t shifted right by 2.8. The area of the shifted curve beyond the critical value t* = 1.97 is shaded and labelled 80% power.">
 <figcaption>Both curves are <em>t</em> distributions with 298 degrees of freedom, the sample size the calculator opens with (<em>n</em> = 150 per group). A real effect slides the distribution to the right by the noncentrality parameter; the 2.8 drawn here is the 80%-power benchmark, not the effect size the calculator opens with. Power (blue) is the share of the shifted curve past the critical value <em>t</em>* = 1.97; the red sliver is the &alpha;/2 = 2.5% the null curve leaves in the same region, the false positives.</figcaption>
@@ -82,7 +82,7 @@ You have **three levers** to increase power:
 
 1. **Make the effect bigger** — design a stronger, clearer treatment.
 2. **Make the noise smaller** — block, add covariates, use a better-measured outcome.
-3. **Collect more data** — raise $n$.
+3. **Collect more data** — increase $n$.
 
 $\delta$ and $\sigma$ enter as a *ratio*: halving the noise buys exactly what doubling the effect buys. And $n$ enters under a **square root** — quadrupling your sample only doubles the signal. This is why "collect more data" is usually the most expensive lever, and why hard thinking about your treatment and your measurement is usually the cheapest.
 
@@ -108,7 +108,7 @@ $$
 \text{pnc} = d \sqrt{n/2} = \frac{\delta}{\sigma}\sqrt{n/2}.
 $$
 
-<details><summary>¿Qué es "pnc"?</summary><p>Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> (pnc) indica qué tan lejos se desplaza. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con &alpha; = 0.05.</p>
+<details><summary>¿Qué es "pnc"?</summary><p>Interprétalo como el efecto verdadero expresado en errores estándar: aproximadamente el estadístico <em>t</em> que deberías esperar obtener. Bajo la hipótesis nula, tu estadístico <em>t</em> sigue la distribución <em>t</em> central habitual, centrada en cero. Cuando existe un efecto real, sigue una <em>t</em> <em>no central</em> —de la misma familia, pero desplazada del cero— y el <strong>parámetro de no centralidad</strong> (pnc) indica qué tan lejos se desplaza. La potencia es el área de esa distribución desplazada más allá de tu valor crítico, así que un parámetro de no centralidad cercano a 2.8 da 80% de potencia con &alpha; = 0.05. La fórmula de arriba es el parámetro de no centralidad para el diseño que se supone aquí: dos grupos del mismo tamaño, con <em>n</em> observaciones en cada uno.</p>
 <figure class="ncp-fig">
 <img src="files/pnc-es.svg" alt="Dos distribuciones t: la t central bajo la hipótesis nula, centrada en cero, y una t no central desplazada 2.8 a la derecha. El área de la curva desplazada más allá del valor crítico t* = 1.97 está sombreada y etiquetada como 80% de potencia.">
 <figcaption>Ambas curvas son distribuciones <em>t</em> con 298 grados de libertad, el tamaño de muestra con el que abre la calculadora (<em>n</em> = 150 por grupo). Un efecto real desplaza la distribución hacia la derecha por el parámetro de no centralidad; el 2.8 que se dibuja aquí es el punto de referencia del 80% de potencia, no el tamaño del efecto con el que abre la calculadora. La potencia (azul) es la parte de esa curva desplazada más allá del valor crítico <em>t</em>* = 1.97; la franja roja es el &alpha;/2 = 2.5% que la curva nula deja en esa misma región, los falsos positivos.</figcaption>
@@ -613,7 +613,7 @@ Usa la calculadora para ver cómo cambia la potencia estadística al modificar e
 
 In the equation above, $\delta$ and $\sigma$ take whatever units your outcome uses — scale points, pesos, vote share — as long as the two agree. Their ratio has none: $d = \delta/\sigma$ is measured in standard deviations, so $d = 0.2$ means the treatment moves the outcome one-fifth of a standard deviation.
 
-That ratio is **Cohen's $d$**. You can use Cohen's $d$ to approximate your effect size by comparing your design to existing research. Cohen's benchmarks are: $0.2$ small effect, $0.5$ medium effect, $0.8$ large effect. But use these with caution. Effects in political behavior can fall well under $0.2$. Designing around $0.5$ can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.
+That ratio is **Cohen's $d$**. You can use Cohen's $d$ to approximate your effect size by comparing your design to existing research. Cohen's benchmarks are: $0.2$ small effect, $0.5$ medium effect, $0.8$ large effect ([Cohen 1992](https://www2.psych.ubc.ca/~schaller/528Readings/Cohen1992.pdf)). But use these with caution. Effects in political behavior can fall well under $0.2$. Designing around $0.5$ can lead to an underpowered study. Anchor your guess in studies closest to your own design instead, then shade down.
 
 ## What the calculator assumes
 
@@ -623,7 +623,7 @@ Three things worth knowing about how the levers are modelled:
 
 **Effect size is the effect you want to detect, not the effect you hope to find.** Enter the smallest difference that would still matter substantively. Powering a study on an optimistic guess is the most common way to end up underpowered — and the effect you can *just* detect is, by construction, one you can only estimate imprecisely.
 
-**Noise reduction is expressed as $R^2$**, the share of outcome variance explained by your blocking variables or covariates. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test.
+**Noise reduction is expressed as $R^2$**, the share of outcome variance explained by your blocking variables or covariates. Pre-treatment measures of the outcome itself are usually the most powerful covariates available — the statistical argument for a pre-test (see [Clifford et al. 2021](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2E1637FFE36DFD0BA4AD0822634D8337/S0003055421000241a.pdf/increasing-precision-without-altering-treatment-effects-repeated-measures-designs-in-survey-experiments.pdf)).
 
 **Power is the upper-tail probability only.** Rejecting the null in the *wrong* direction is not a success, so it does not count here. This is also R's convention, and it is why power approaches $\alpha/2$, not $\alpha$, as the effect goes to zero.
 
@@ -653,7 +653,7 @@ For designs beyond two-group comparisons of means, use the [`pwr`](https://cran.
 
 En la ecuación de arriba, $\delta$ y $\sigma$ toman las unidades que use tu resultado —puntos de escala, pesos, porcentaje de votos— siempre que ambas coincidan. Su razón no tiene unidades: $d = \delta/\sigma$ se mide en desviaciones estándar, así que $d = 0.2$ significa que el tratamiento mueve el resultado un quinto de una desviación estándar.
 
-Esa razón es la **$d$ de Cohen**. Puedes usar la $d$ de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: $0.2$ efecto pequeño, $0.5$ efecto mediano, $0.8$ efecto grande. Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de $0.2$. Diseñar pensando en $0.5$ puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.
+Esa razón es la **$d$ de Cohen**. Puedes usar la $d$ de Cohen para aproximar el tamaño de tu efecto comparando tu diseño con investigaciones ya publicadas. Los puntos de referencia de Cohen son: $0.2$ efecto pequeño, $0.5$ efecto mediano, $0.8$ efecto grande ([Cohen 1992](https://www2.psych.ubc.ca/~schaller/528Readings/Cohen1992.pdf)). Pero úsalos con cautela. Los efectos en comportamiento político pueden quedar muy por debajo de $0.2$. Diseñar pensando en $0.5$ puede llevar a un estudio subpotenciado. Ancla tu estimación en los estudios más cercanos a tu propio diseño y luego ajústala a la baja.
 
 ## Qué supone la calculadora
 
@@ -663,7 +663,7 @@ Tres cosas que vale la pena saber sobre cómo se modelan las palancas:
 
 **El tamaño del efecto es el que quieres detectar, no el que esperas encontrar.** Ingresa la diferencia más pequeña que aún importaría sustantivamente. Calcular la potencia con una estimación optimista es la manera más común de terminar subpotenciado —y el efecto que apenas puedes detectar es, por construcción, uno que solo puedes estimar con imprecisión.
 
-**La reducción de ruido se expresa como $R^2$**, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test.
+**La reducción de ruido se expresa como $R^2$**, la proporción de la varianza del resultado explicada por tus variables de bloqueo o covariables. Las mediciones del resultado antes del tratamiento suelen ser las covariables más poderosas disponibles —el argumento estadístico a favor de un pre-test (véase [Clifford et al. 2021](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2E1637FFE36DFD0BA4AD0822634D8337/S0003055421000241a.pdf/increasing-precision-without-altering-treatment-effects-repeated-measures-designs-in-survey-experiments.pdf)).
 
 **La potencia es solo la probabilidad de cola superior.** Rechazar la hipótesis nula en la dirección *equivocada* no cuenta como éxito, así que aquí no se contabiliza. Esta también es la convención de R, y por eso la potencia se acerca a $\alpha/2$, no a $\alpha$, cuando el efecto tiende a cero.
 
