@@ -3,11 +3,15 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!cpri.qmd"
   resources:
     - CNAME
+    - robots.txt
 
 website:
   title: "Brett R. Bessen"
+  # Required for Quarto to emit sitemap.xml and canonical <link> tags.
+  site-url: https://www.brettbessen.com
   favicon: favicon.svg
   google-analytics: "G-SRPDL0S24K"
   navbar:

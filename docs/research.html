@@ -87,7 +87,7 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 <meta property="og:image" content="https://www.brettbessen.com/files/head_shot.jpeg">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@BessenBrett">
 <meta name="twitter:title" content="Brett R. Bessen - Research">
 <meta name="twitter:description" content="">
@@ -171,7 +171,7 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <strong>Social retrospection: conversation networks, performance evaluations, and candidate support</strong> — 2026. Brett Bessen. <em>Journal of Elections, Public Opinion and Parties</em>.<br>
-<a href="https://doi.org/10.1080/17457289.2026.2693134" class="btn btn-outline-secondary btn-xs"><i class="bi bi-link-45deg"></i> Article</a> <a href="files/Social retrospection  conversation networks  performance evaluations  and candidate support.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="files/social_retrospection_replication.zip" class="btn btn-outline-secondary btn-xs"><i class="bi bi-database"></i> Replication</a>
+<a href="https://doi.org/10.1080/17457289.2026.2693134" class="btn btn-outline-secondary btn-xs"><i class="bi bi-link-45deg"></i> Article</a> <a href="files/Social retrospection  conversation networks  performance evaluations  and candidate support.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="files/social_retrospection_replication.zip" class="btn btn-outline-secondary btn-xs"><i class="bi bi-database"></i> Replication</a> <a href="social-retrospection.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-info-circle"></i> Details</a>
 <details>
 <summary>
 Abstract
@@ -237,7 +237,7 @@ How, if at all, does self-interest bear on individuals’ economic policy prefer
 </details>
 <hr>
 <strong>Rejecting representation? Party systems and popular support for referendums in Europe</strong> — 2020. Brett Bessen. <em>Electoral Studies</em>.<br>
-<a href="files/Bessen - Rejecting Representation - 2020.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="files/Rejecting Representation - Supplemental Materials.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-plus"></i> Supplemental</a> <a href="https://scholar.google.com/scholar?cites=888523882020804327" class="btn btn-outline-secondary btn-xs"><i class="bi bi-quote"></i> Cited by</a>
+<a href="files/Bessen - Rejecting Representation - 2020.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="files/Rejecting Representation - Supplemental Materials.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-plus"></i> Supplemental</a> <a href="https://scholar.google.com/scholar?cites=888523882020804327" class="btn btn-outline-secondary btn-xs"><i class="bi bi-quote"></i> Cited by</a> <a href="rejecting-representation.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-info-circle"></i> Details</a>
 <details>
 <summary>
 Abstract
@@ -341,7 +341,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/www\.brettbessen\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
