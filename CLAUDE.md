@@ -44,6 +44,21 @@ Common Bootstrap icons used: `bi-file-earmark-pdf` (PDF), `bi-file-earmark-text`
 
 **Entry dividers** — `<hr>` between each publication or course block.
 
+**Invisible links** — when a link exists for a *crawler* rather than a reader, it
+must be visually indistinguishable from surrounding text. Brett's rule (2026-08-22):
+*"the link is only really needed for Google, not for readers."* Apply the
+`.paper-title-link` class, which inherits colour and removes the underline in every
+state (`:hover`, `:focus`, `:visited`):
+
+```markdown
+[**Paper title**](paper-landing-page.html){.paper-title-link}
+```
+
+Do **not** add a visible "Details"/"More" button for this purpose — that was the
+first attempt and Brett rejected it as clutter. Never blanket-style all `<a>` tags on
+a page to achieve this; ordinary links (DOIs, replication archives, press) keep their
+normal blue styling.
+
 ## Research Page Conventions
 
 Each entry: bold title + authors, journal/year on same line with `·` separators, then buttons, then abstract toggle. Working papers under R&R show "Revise and Resubmit" without naming the journal.
@@ -129,9 +144,24 @@ metadata, drop `citation_journal_title`/`citation_doi` (unpublished), keep
 `citation_pdf_url` pointing at the working-paper PDF once it is in `files/`, and add
 the Details button to its entry under Working Papers.
 
+**While `cpri.qmd` stays unpublished**, any push requires holding it out of the
+render: add `- "!cpri.qmd"` to the render list, remove the CPRI navbar entry, render,
+commit, push, then restore both and re-render. **Hazard:** the hold puts
+`- "!cpri.qmd"` back into `_quarto.yml`, so staging that file re-commits the
+exclusion — a landmine that makes the page silently fail to render after it is
+finally added. Always inspect `git diff --cached _quarto.yml` before committing.
+This all goes away once the page ships.
+
 ## Remaining Tasks
 
 ### CPRI page (blocking publication)
+Brett expects to finalize and publish this **next session** (noted 2026-08-22).
+Publish checklist: remove nothing from `_quarto.yml` (the exclusion is already gone
+and the navbar entry is restored locally but uncommitted), then
+`git add cpri.qmd styles.css files/tec-logo.png _quarto.yml docs/` — note
+`files/tec-logo.png` is **untracked**, so without an explicit add the torch 404s on
+the live page.
+
 - [ ] Confirm the meeting dates — Brett is still coordinating with other profs.
       Current rows are placeholder biweekly Fridays, Sep 4 – Dec 11 2026. Note for
       whoever picks: Mondays collide with Nov 2 (Día de Muertos) and Nov 16
