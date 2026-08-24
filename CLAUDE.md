@@ -25,6 +25,8 @@ All commands run from the repo root. Quarto outputs to `docs/` (set in `_quarto.
 
 Four pages (`index.qmd`, `research.qmd`, `teaching.qmd`, `cv.qmd`) plus `about.qmd`. Site config in `_quarto.yml`: Bootstrap **Cosmo** theme, custom `styles.css`, Google Analytics, `meta.html` injected into every page `<head>` for SEO.
 
+Not in the navbar, reachable only by direct link: `power.qmd` (linked from `teaching.qmd`) and the per-paper landing pages — `social-retrospection.qmd`, `rejecting-representation.qmd`, and `captured-by-the-ballot.qmd`.
+
 `files/` holds all downloadable assets: `CV.pdf` is a **copy** of `C:\Users\L03534594\Dropbox\Apps\Overleaf\CV\CV.pdf` (it was documented as a symlink, but native symlinks aren't permitted on this machine and the file had gone stale — discovered 2026-07-16). After recompiling the CV, re-copy the PDF here, then `quarto render` and push. Syllabuses live in `files/syllabuses/`. `files/Labs/` is a local clone of the **separate** `causal-inference-labs` GitHub repo — it is gitignored in this repo (the teaching page's R Labs button links to that repo on GitHub, not to local files).
 
 ## UI Patterns
@@ -139,10 +141,51 @@ spaces (and the social-retrospection filename has *double* spaces, which encode 
 Each landing page is linked from `research.qmd` with a `bi-info-circle` "Details"
 button so crawlers can reach it; they are also in `sitemap.xml` automatically.
 
-**To add the judicial-elections working paper:** copy either pair, swap the
-metadata, drop `citation_journal_title`/`citation_doi` (unpublished), keep
-`citation_pdf_url` pointing at the working-paper PDF once it is in `files/`, and add
-the Details button to its entry under Working Papers.
+**Done 2026-08-24 — `captured-by-the-ballot.qmd` + `_citation-captured-by-the-ballot.html`.**
+This one is not just a stub carrying meta tags: it doubles as a **bilingual
+one-pager** explaining the paper for a lay audience, so the `.paper-title-link`
+from `research.qmd` lands somewhere worth reading rather than on a 58-page PDF.
+Treat it as the template for any future working paper that deserves a real
+landing page. Its parts:
+
+- EN/ES toggle copied verbatim from `power.qmd` (`.lang-en`/`.lang-es`,
+  `body.show-es`, shared `bb-lang` localStorage key) — this is the **third** page
+  using it, after `power.qmd` and `cpri.qmd`.
+- Figures are PNGs exported from the paper's PDFs with
+  `pdftoppm -r 150 -png -singlefile`, named `files/cbb-fig-*.png`. They stay in
+  **English on both language versions** (Brett's call, 2026-08-24) — only the
+  captions are translated, and each Spanish caption ends "(Figura en inglés.)".
+- A `#composition-tool` widget, the site's **second** hand-written JS tool after
+  `power.qmd`'s calculator. See below.
+- The paper's verbatim abstract sits in a `<details>` at the bottom, so the
+  formal version is present without leading with it.
+
+### The `#composition-tool` widget
+
+Three sliders (Morena / non-partisan / opposition share of the electorate) drive
+a bar chart of how often a candidate of each affiliation would be chosen.
+
+It works as static JS because the underlying quantity is **linear in the
+weights** — MM(**w**) = Σ w_g·MM_g — so the whole computation is three
+multiplications against constants hard-coded from the paper's Appendix Table A4.
+No R, no server; **Shiny was considered and rejected**, since GitHub Pages
+cannot host it and an iframe to shinyapps.io would sleep between visits.
+
+Three things to preserve if it is ever edited:
+
+- The constants must match published Appendix Table A4 (strict party ID) or the
+  widget and the paper will drift. Validated: at the survey-sample preset it
+  reproduces the paper's Figure 1 marginal means to two decimals
+  (0.43 / 0.45 / 0.61 / 0.51), and the ENEM preset gives 0.415 as in Figure 5.
+- It lives inside a `<details>` that starts **closed** (Brett, 2026-08-24: the
+  widget sits deep in the paper's methods and lay readers will not necessarily
+  get there). Percentage widths resolve to zero while hidden, so the `toggle`
+  handler re-renders on expand. Do not remove that listener.
+- Moving one slider redistributes the remainder across the other two in
+  proportion to their current values, which is what keeps the three summing to
+  100. Verified across a 5% sweep of the whole simplex: the sum never left 100,
+  and the Independent bar never dropped below 0.55 — the paper's dominance
+  result, which the widget exists to make tangible.
 
 **While `cpri.qmd` stays unpublished**, any push requires holding it out of the
 render: add `- "!cpri.qmd"` to the render list, remove the CPRI navbar entry, render,
@@ -188,8 +231,9 @@ the live page.
 - [ ] Submit site to Google Search Console — `sitemap.xml` and `robots.txt` now
       exist (added `site-url` to `_quarto.yml` on 2026-08-22), so the sitemap is
       ready to submit at https://www.brettbessen.com/sitemap.xml
-- [ ] Add a Scholar landing page for the judicial-elections working paper once the
-      PDF is in `files/` (see "Google Scholar Landing Pages" above)
+- [x] Add a Scholar landing page for the judicial-elections working paper — done
+      2026-08-24 as `captured-by-the-ballot.qmd`, a bilingual one-pager rather
+      than a bare stub (see "Google Scholar Landing Pages" above)
 - [ ] `rejecting-representation`: add `citation_doi`, `citation_volume`,
       `citation_firstpage` — not currently known
 - [ ] Add course evaluations/reviews PDF to teaching page

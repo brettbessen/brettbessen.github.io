@@ -42,6 +42,83 @@
     "text": "I am an Assistant Professor in Political Science and International Relations at Tecnológico de Monterrey in Mexico. I received my Ph.D. from the University of Colorado Boulder.\nMy research examines public opinion on democratic backsliding, asking why people support or resist elected leaders who undermine democracy. My recent articles examine how backsliding leaders manipulate public opinion to garner support for their efforts to erode democracy, and what strategies pro-democracy actors can use to rebut their misleading rhetoric. Additional projects examine public opinion about migration and direct democracy in comparative perspective. My work combines survey experiments, text analysis, and multilevel modeling.\nMy research has been published in the Proceedings of the National Academy of Sciences, Comparative Political Studies, Political Behavior, Electoral Studies, and Research & Politics, among other journals.\n Email  Google Scholar  Twitter/X  LinkedIn"
   },
   {
+    "objectID": "captured-by-the-ballot.html",
+    "href": "captured-by-the-ballot.html",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "",
+    "text": "English\n  Español\nBrett Bessen. Working paper, 2026."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#in-brief",
+    "href": "captured-by-the-ballot.html#in-brief",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "In Brief",
+    "text": "In Brief\nOn June 1, 2025, Mexicans elected more than 800 judges by popular vote, including all nine justices of the Supreme Court. While proponents argued that elections would bring the courts closer to citizens, critics argued that they would hand the courts to the governing party, Morena. I fielded a survey experiment in the weeks before the vote, then compared the preferences it revealed against the actual election results.\n\nThe election produced a bench at odds with popular preferences.\n\nCitizens preferred independent, well-credentialed judges in the experiment. Yet the elections resulted in a Supreme Court held by pro-Morena justices. The gap between popular preferences and the election results is best explained by the supply of electoral information via voter guides (acordeones) and low turnout by opposition and non-partisan voters."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#what-voters-wanted",
+    "href": "captured-by-the-ballot.html#what-voters-wanted",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "What voters wanted",
+    "text": "What voters wanted\nIn a survey of 1,518 Mexicans fielded days before the election, respondents chose repeatedly between pairs of hypothetical Supreme Court candidates differing in party affiliation, credentials, and background. Given full information, they preferred politically independent candidates with stronger legal credentials.\nRespondents chose independent candidates 61% of the time and they chose Morena-affiliated candidates 43% of the time.\nThe preference for independents is driven more by aversion to out-partisan judges than by enthusiasm for independents. Respondents chose a rival party’s candidate only 32% of the time, and their own party’s just 56%. When both partisan camps turn out, independents come out ahead.\nBelow, I show that these results are not simply an artifact of an online sample.\n\n\n\nPreferences for Supreme Court (SCJN) candidates. The dashed line at 0.5 marks no preference. The figure shows marginal means, which are the average probability of selecting a candidate at a given attribute level, averaging over all other randomized attributes. For instance, the marginal mean of 0.43 on Morena affiliation indicates that the Morena-affiliated candidate was selected in 43% of tasks where they faced an alternative non-Morena candidate. Estimates are corrected for measurement error following Clayton et al. (2023)."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#what-the-election-produced",
+    "href": "captured-by-the-ballot.html#what-the-election-produced",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "What the election produced",
+    "text": "What the election produced\nThe election produced a Supreme Court held by pro-Morena judges. Turnout was about 13%. The best predictor of a candidate’s vote share was appearing on the acordeones — illicitly circulated voter guides listing nine candidates close to Morena.1 Appearing on one was worth about 2.5 percentage points, close to the entire vote share of several winners. All nine listed candidates won.\nCredentials, which mattered so much in the survey, barely moved vote share. Morena-affiliated candidates who were not listed on the acordeones gained almost nothing in vote share. This suggests that party coordination (in the form of the acordeones) was more important than grassroots support for Morena.\n\n\n\nEstimated difference in district vote share for each candidate attribute, relative to a baseline category. Download the paper for estimation and coding details."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#why-the-gap",
+    "href": "captured-by-the-ballot.html#why-the-gap",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "Why the gap",
+    "text": "Why the gap\nThe ballot contained minimal information: a candidate’s ballot number and a code for the branch that nominated each candidate across 64 Supreme Court candidates. Other information, such as candidates’ party or educational background, was not included.\nThe acordeones provided partisan information at scale, concentrating votes on the acordeón-listed candidates. Meanwhile, votes were dispersed between the remaining candidates, effectively wasting these votes.\nIn addition, opposition voters stayed home from the elections. Opposition leaders called for a boycott, and opposition voters were skeptical of the elections. Using a separate panel survey by Amanda Driscoll and Michael J. Nelson, I show that the best-informed opposition supporters were the least likely to vote and the least likely to expect a fair election.\nThe experimental results suggest that if opposition leaders had encouraged turnout (and some degree of voter coordination), it would likely have produced a more politically independent bench.\n\n\n\nPredicted turnout and perceived fairness of the election, by political knowledge and partisan sympathy. Download the paper for estimation details."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#what-it-means",
+    "href": "captured-by-the-ballot.html#what-it-means",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "What it means",
+    "text": "What it means\nComparing the experiment with the electoral results indicates that the elections produced a court at odds with popular preferences for judicial independence. The non-partisan ballot did not remove partisanship from the election; it favored the party willing to supply partisan information at scale.\n\n1. Reporting in Proceso linked their distribution to the federal Secretaría de Bienestar; President Sheinbaum denied it. The INE fined the candidates who benefited, though the electoral tribunal later overturned the fines. ↩"
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#en-breve",
+    "href": "captured-by-the-ballot.html#en-breve",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "En breve",
+    "text": "En breve\nEl 1 de junio de 2025, la ciudadanía mexicana eligió por voto popular a más de 800 juzgadores, incluidos los nueve ministros de la Suprema Corte. Mientras quienes impulsaron la reforma sostenían que las elecciones acercarían los tribunales a la ciudadanía, sus críticos sostenían que entregarían el poder judicial al partido gobernante, Morena. Apliqué un experimento de encuesta en las semanas previas a la votación y comparé las preferencias que reveló con los resultados electorales.\n\nLa elección produjo una Corte contraria a las preferencias ciudadanas.\n\nEn el experimento, la ciudadanía prefirió jueces independientes y bien calificados. Sin embargo, las elecciones dieron lugar a una Suprema Corte alineada con el partido gobernante. La brecha entre las preferencias ciudadanas y los resultados electorales se explica mejor por la oferta de información electoral a través de guías de votación (acordeones) y por la baja participación de votantes opositores y sin partido."
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#qué-querían-los-votantes",
+    "href": "captured-by-the-ballot.html#qué-querían-los-votantes",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "Qué querían los votantes",
+    "text": "Qué querían los votantes\nEn una encuesta a 1,518 personas, aplicada días antes de la elección, cada participante eligió repetidamente entre pares de candidaturas hipotéticas a la Suprema Corte que variaban en afiliación partidista, credenciales y perfil. Con información completa, prefirieron candidaturas políticamente independientes y con mayores credenciales jurídicas. Eligieron candidaturas independientes el 61% de las veces y candidaturas afines a Morena el 43% de las veces.\nLa preferencia por las candidaturas independientes responde más al rechazo hacia jueces de un partido rival que al entusiasmo por las independientes. Los participantes eligieron a la candidatura de un partido rival solo el 32% de las veces, y a la de su propio partido apenas el 56%. Cuando ambos bandos partidistas participan, las candidaturas independientes quedan por delante.\nMás abajo muestro que estos resultados no son simplemente un artefacto de una muestra en línea.\n\n\n\nPreferencias por candidaturas a la Suprema Corte (SCJN). La línea punteada en 0.5 indica ausencia de preferencia. La figura muestra medias marginales, es decir, la probabilidad promedio de elegir una candidatura con un nivel de atributo dado, promediada sobre el resto de los atributos aleatorizados. Por ejemplo, la media marginal de 0.43 para la afiliación con Morena indica que la candidatura afín a Morena fue elegida en el 43% de las tareas en las que enfrentó a una alternativa no afiliada a Morena. Las estimaciones están corregidas por error de medición siguiendo a Clayton et al. (2023). (Figura en inglés.)"
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#qué-produjo-la-elección",
+    "href": "captured-by-the-ballot.html#qué-produjo-la-elección",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "Qué produjo la elección",
+    "text": "Qué produjo la elección\nLa elección produjo una Suprema Corte en manos de jueces afines a Morena. La participación fue de alrededor del 13%. El mejor predictor del porcentaje de votos fue aparecer en los acordeones: guías de votación distribuidas de manera ilícita que enlistaban nueve candidaturas cercanas a Morena.1 Aparecer en uno equivalía a unos 2.5 puntos porcentuales, cerca de la votación total de varias personas ganadoras. Las nueve candidaturas listadas ganaron.\nLas credenciales, tan importantes en la encuesta, apenas movieron el porcentaje de votos. Las candidaturas afines a Morena que no aparecían en los acordeones ganaron muy poco en votación. Esto sugiere que la coordinación partidista, mediante los acordeones, pesó más que el apoyo de las bases a Morena.\n\n\n\nDiferencia estimada en el porcentaje de votos por distrito para cada atributo, respecto de una categoría de referencia. Descarga el artículo para más detalles sobre la estimación y la codificación. (Figura en inglés.)"
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#por-qué-la-brecha",
+    "href": "captured-by-the-ballot.html#por-qué-la-brecha",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "Por qué la brecha",
+    "text": "Por qué la brecha\nLa boleta contenía información mínima: el número de cada candidatura en la boleta y una clave del poder que la postuló, entre 64 candidaturas a la Suprema Corte. Otra información, como el partido o la formación académica de cada candidatura, no se incluyó. Los acordeones proveyeron información partidista a gran escala y concentraron los votos en las candidaturas enlistadas. Mientras tanto, los votos se dispersaron entre las candidaturas restantes, desperdiciándose en la práctica.\nAdemás, los votantes opositores se quedaron en casa. Los liderazgos opositores llamaron a boicotear la elección, y los votantes opositores desconfiaban de los comicios. Con una encuesta de panel independiente de Amanda Driscoll y Michael J. Nelson, muestro que quienes simpatizaban con la oposición y estaban mejor informados fueron los menos propensos a votar y los menos propensos a esperar una elección justa.\nLos resultados experimentales sugieren que, si los liderazgos opositores hubieran fomentado la participación (y cierto grado de coordinación del voto), se habría producido una Corte más independiente.\n\n\n\nParticipación estimada y percepción de equidad electoral, según conocimiento político y simpatía partidista. Descarga el artículo para más detalles sobre la estimación. (Figura en inglés.)"
+  },
+  {
+    "objectID": "captured-by-the-ballot.html#qué-significa",
+    "href": "captured-by-the-ballot.html#qué-significa",
+    "title": "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico",
+    "section": "Qué significa",
+    "text": "Qué significa\nComparar el experimento con los resultados electorales indica que las elecciones produjeron una Corte contraria a las preferencias ciudadanas por la independencia judicial. La boleta no partidista no eliminó el partidismo de la elección: favoreció al partido dispuesto a ofrecer información partidista a gran escala.\n\n1. Reportajes de Proceso vincularon su distribución con la Secretaría de Bienestar federal; la presidenta Sheinbaum lo negó. El INE multó a las candidaturas beneficiadas, aunque el Tribunal Electoral revocó después las multas. ↩"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -137,7 +214,7 @@
     "href": "research.html#working-papers",
     "title": "Research",
     "section": "Working Papers",
-    "text": "Working Papers\nCaptured by the Ballot: Judicial Elections and Democratic Erosion in Mexico — Brett Bessen.\n Slides\n\nTrust, Tasks, and Troops: Support for Military Governance in Mexico — Brett Bessen, Rebecca Bell-Martin, Daira Arana Aguilar & Perla Paloma Lepez.\n\nCosmopolitanism, Messaging, and Attitudes Toward Refugees in the United States — Brett Bessen, Brendan Connell & Ken Stallman."
+    "text": "Working Papers\nCaptured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico — Brett Bessen.\n PDF\n\n\nAbstract\n\n\nPublic tolerance for democratic erosion is often attributed to voter partisanship. Voters are thought to overlook undemocratic maneuvers to support the partisan in-group. Yet, backsliders often disavow traditional parties and frame their reforms as non-partisan. I examine the role of voter partisanship in non-partisan elections, showing how elite manipulation of the information environment can generate partisan outcomes that facilitate backsliding—even when citizens prefer non-partisan outcomes on average. I examine Mexico’s 2025 judicial elections, pairing a conjoint experiment with an analysis of the electoral results. While the conjoint indicates that voters preferred independent judges, the electoral results indicate that government-aligned candidates on illicitly circulated voter guides (acordeones) received the most support, contributing to the partisan capture of the Supreme Court. Elite manipulation of the information environment and electoral incentives—rather than partisan preferences among the eligible electorate—were primary contributors to the court’s partisan capture.\n\n\n\nTrust, Tasks, and Troops: Support for Military Governance in Mexico — Brett Bessen, Rebecca Bell-Martin, Daira Arana Aguilar & Perla Paloma Lepez.\n\nCosmopolitanism, Messaging, and Attitudes Toward Refugees in the United States — Brett Bessen, Brendan Connell & Ken Stallman."
   },
   {
     "objectID": "teaching.html",

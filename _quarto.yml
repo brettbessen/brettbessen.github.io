@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!cpri.qmd"
   resources:
     - CNAME
     - robots.txt
