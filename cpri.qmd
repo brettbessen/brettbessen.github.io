@@ -1,5 +1,8 @@
 ---
 title: "CPRI Research Group"
+format:
+  html:
+    include-in-header: _og-cpri.html
 ---
 
 ```{=html}
