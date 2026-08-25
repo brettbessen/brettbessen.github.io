@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.brettbessen.com/sitemap.xml
+Sitemap: https://brettbessen.com/sitemap.xml

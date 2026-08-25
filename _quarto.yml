@@ -12,7 +12,7 @@ website:
   title: "Brett R. Bessen"
   # Required for Quarto to emit sitemap.xml. (It does not add canonical
   # <link> tags — verified 2026-08-22.)
-  site-url: https://www.brettbessen.com
+  site-url: https://brettbessen.com
   favicon: favicon.svg
   google-analytics: "G-SRPDL0S24K"
   open-graph: false
