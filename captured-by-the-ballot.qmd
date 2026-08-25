@@ -1,8 +1,12 @@
 ---
 title: "Captured by the Ballot: Non-Partisan Judicial Elections and Democratic Erosion in Mexico"
-include-in-header:
-  - meta.html
-  - _citation-captured-by-the-ballot.html
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    html-math-method: katex
+    include-in-header: _citation-captured-by-the-ballot.html
 ---
 
 ```{=html}
