@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Brett R. Bessen - Social retrospection: conversation networks, performance evaluations, and candidate support</title>
+<title>Brett R. Bessen - CPRI Research Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,23 +82,14 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://brettbessen.com/">
-<meta property="og:title" content="Brett R. Bessen - Social retrospection: conversation networks, performance evaluations, and candidate support">
+<meta property="og:title" content="Brett R. Bessen - CPRI Research Group">
 <meta property="og:description" content="">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@BessenBrett">
-<meta name="twitter:title" content="Brett R. Bessen - Social retrospection: conversation networks, performance evaluations, and candidate support">
+<meta name="twitter:title" content="Brett R. Bessen - CPRI Research Group">
 <meta name="twitter:description" content="">
-<!-- Google Scholar citation tags. Scholar indexes ONE article per page,
-     so these live on the paper's own landing page, never on research.qmd. -->
-<meta name="citation_title" content="Social retrospection: conversation networks, performance evaluations, and candidate support">
-<meta name="citation_author" content="Bessen, Brett">
-<meta name="citation_publication_date" content="2026">
-<meta name="citation_journal_title" content="Journal of Elections, Public Opinion and Parties">
-<meta name="citation_doi" content="10.1080/17457289.2026.2693134">
-<meta name="citation_abstract_html_url" content="https://brettbessen.com/social-retrospection.html">
-<meta name="citation_pdf_url" content="https://brettbessen.com/files/Social%20retrospection%20%20conversation%20networks%20%20performance%20evaluations%20%20and%20candidate%20support.pdf">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -134,7 +125,7 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cpri.html"> 
+    <a class="nav-link active" href="./cpri.html" aria-current="page"> 
 <span class="menu-text">CPRI</span></a>
   </li>  
   <li class="nav-item">
@@ -162,7 +153,7 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Social retrospection: conversation networks, performance evaluations, and candidate support</h1>
+<h1 class="title">CPRI Research Group</h1>
 </div>
 
 
@@ -179,18 +170,208 @@ gtag('config', 'G-SRPDL0S24K', { 'anonymize_ip': true});
 </header>
 
 
-<p>Brett Bessen. <em>Journal of Elections, Public Opinion and Parties</em>, 2026.</p>
-<p><a href="https://doi.org/10.1080/17457289.2026.2693134" class="btn btn-outline-secondary btn-xs"><i class="bi bi-link-45deg"></i> Article</a> <a href="files/Social retrospection  conversation networks  performance evaluations  and candidate support.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="files/social_retrospection_replication.zip" class="btn btn-outline-secondary btn-xs"><i class="bi bi-database"></i> Replication</a></p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Voters’ ability to assess the performance of elected leaders is central to theories of democratic accountability. I extend theories of retrospective voting by considering the influence of political discussion. Using a panel survey of Brazilian respondents, I examine the relationship between political disagreement in voters’ conversation networks and changes in candidate support across party lines during President Lula da Silva’s first term. I find that Brazilians with more disagreeing conversation partners are substantially more likely to update their views and support different candidates going into the next election. Further, I find suggestive evidence that network disagreement reduces support for Lula by producing more negative evaluations of his performance. The results indicate that conversation networks play a significant but underappreciated role in retrospective evaluations of elected leaders.</p>
-<hr>
-<p><a href="research.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-arrow-left"></i> All research</a></p>
+<div class="lang-toggle">
+  <button type="button" class="lang-btn" data-lang="en" id="lang-btn-en">English</button>
+  <button type="button" class="lang-btn" data-lang="es" id="lang-btn-es">Español</button>
+</div>
+<style>
+.lang-toggle { display: flex; gap: 0.4rem; margin: 0 0 1.4rem; }
+.lang-btn {
+  font-size: 0.78rem;
+  padding: 3px 11px;
+  border-radius: 5px;
+  border: 1px solid #6c757d;
+  background: transparent;
+  color: #6c757d;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.lang-btn:hover { background: #f1f3f5; }
+.lang-btn.active {
+  background: #2780e3;
+  border-color: #2780e3;
+  color: #fff;
+}
+body:not(.show-es) .lang-es { display: none; }
+body.show-es .lang-en { display: none; }
+/* Tec torch after the page title. Declared here rather than in styles.css
+   because that file is global — this <style> only ships on cpri.html, so the
+   mark cannot leak onto other pages' titles. Decorative, hence a background
+   image with no alt text: the intro already names Tec de Monterrey. */
+h1.title::after {
+  content: "";
+  display: inline-block;
+  width: 1.45em;
+  height: 1.45em;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  background: url("files/tec-logo.png") no-repeat center center;
+  background-size: contain;
+}
+</style></style>
+<script>
+(function () {
+  "use strict";
+  function apply(lang) {
+    document.body.classList.toggle("show-es", lang === "es");
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+    });
+    try { localStorage.setItem("bb-lang", lang); } catch (e) {}
+  }
+  var stored = null;
+  try { stored = localStorage.getItem("bb-lang"); } catch (e) {}
+  var initial = stored === "es" ? "es" : "en";
+  document.getElementById("lang-btn-en").addEventListener("click", function () { apply("en"); });
+  document.getElementById("lang-btn-es").addEventListener("click", function () { apply("es"); });
+  apply(initial);
+  window.bbApplyLang = apply;
+})();
+</script>
+<div>
+<div id="cpri-page">
+
+<!-- =====================================================================
+     THREE LINKS TO FILL IN. Each appears twice (English and Spanish).
+     Replace the href="#" values with the OneDrive "Share" links:
+       1. MEETING LINK   — Zoom/Teams link for the session
+       2. PAPERS FOLDER  — shared OneDrive folder holding the PDFs
+       3. SIGN-UP SHEET  — the Excel workbook in that same folder
+     ===================================================================== -->
+
+<div class="lang-en">
+
+<p class="cpri-intro">A biweekly research workshop in Political Science and International Relations at Tec de Monterrey. Currently hosted by Radha Sarkar and Brett Bessen. If you plan to circulate a paper, please upload it here and email us so we can remind other participants to read it.</p>
+
+<div class="cpri-actions">
+<!-- 1. MEETING LINK -->
+<a href="https://teams.microsoft.com/meet/253199138150951?p=gZNF5zm6IVYOH1eiPx" class="btn btn-outline-secondary btn-xs"><i class="bi bi-camera-video"></i> Meeting link</a>
+<!-- 2. PAPERS FOLDER -->
+<a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT" class="btn btn-outline-secondary btn-xs"><i class="bi bi-folder2-open"></i> Papers</a>
+<!-- 3. SIGN-UP SHEET -->
+<a href="https://tecmx-my.sharepoint.com/:x:/g/personal/brettbessen_tec_mx/IQDV21UYIyfER6UjEu8Z2hb7AfXR3qxzhWRAEOO3R32CBT8?e=5RjJna" class="btn btn-outline-secondary btn-xs"><i class="bi bi-calendar-check"></i> Sign up for a slot</a>
+</div>
+
+<div class="cpri-section-title">Schedule</div>
+
+<p class="cpri-intro">Tuesdays, 2:00–3:00 PM.</p>
 
 
-</section>
+<table class="cpri-table table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th">Presenter</th>
+<th data-quarto-table-cell-role="th">Paper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="cpri-date">Sep 8, 2026</td>
+<td>Maddie Stevens</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">Sep 22, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">Oct 6, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">Oct 20, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">Nov 3, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">Nov 17, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">Dec 1, 2026</td>
+<td class="cpri-open">Available</td>
+<td class="cpri-open">—</td>
+</tr>
+</tbody>
+</table>
+<p>Questions, or trouble accessing the folder? Email <a href="mailto:radha.sarkar@tec.mx">radha.sarkar@tec.mx</a> or <a href="mailto:brettbessen@tec.mx">brettbessen@tec.mx</a>.</p>
+</div>
+<div class="lang-es">
+<p>Seminario quincenal de investigación en Ciencias Políticas y Relaciones Internacionales del Tec de Monterrey. Actualmente coordinado por Radha Sarkar y Brett Bessen. Si planeas circular un trabajo, súbelo aquí y escríbenos por correo para que podamos recordar a los demás participantes que lo lean.</p>
+<div class="cpri-actions">
+<!-- 1. MEETING LINK --> <a href="https://teams.microsoft.com/meet/253199138150951?p=gZNF5zm6IVYOH1eiPx" class="btn btn-outline-secondary btn-xs"><em></em> Enlace de la sesión</a> <!-- 2. PAPERS FOLDER --> <a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT" class="btn btn-outline-secondary btn-xs"><em></em> Documentos</a> <!-- 3. SIGN-UP SHEET --> <a href="https://tecmx-my.sharepoint.com/:x:/g/personal/brettbessen_tec_mx/IQDV21UYIyfER6UjEu8Z2hb7AfXR3qxzhWRAEOO3R32CBT8?e=5RjJna" class="btn btn-outline-secondary btn-xs"><em></em> Reservar una sesión</a>
+</div>
+<div class="cpri-section-title">
+Calendario
+</div>
+<p>Martes, 2:00–3:00 PM.</p>
+<table class="cpri-table table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Fecha</th>
+<th data-quarto-table-cell-role="th">Presenta</th>
+<th data-quarto-table-cell-role="th">Trabajo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="cpri-date">8 sep 2026</td>
+<td>Maddie Stevens</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">22 sep 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">6 oct 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">20 oct 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">3 nov 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="even">
+<td class="cpri-date">17 nov 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+<tr class="odd">
+<td class="cpri-date">1 dic 2026</td>
+<td class="cpri-open">Disponible</td>
+<td class="cpri-open">—</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-</main> <!-- /main -->
+
+</div>
+
+</div>
+</main></div>
+
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -600,7 +781,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 

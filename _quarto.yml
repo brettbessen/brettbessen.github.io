@@ -3,7 +3,6 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "!cpri.qmd"
   resources:
     - CNAME
     - robots.txt
@@ -25,6 +24,8 @@ website:
         text: Research
       - href: teaching.qmd
         text: Teaching
+      - href: cpri.qmd
+        text: CPRI
       - href: tools.qmd
         text: Tools
       - href: cv.qmd
