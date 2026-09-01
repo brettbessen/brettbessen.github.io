@@ -101,10 +101,10 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">Sep 8, 2026</td><td>Maddie Stevens</td><td>&mdash;</td></tr>
-<tr><td class="cpri-date">Sep 22, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">Sep 22, 2026</td><td>Radha Sarkar</td><td>Two draft chapters on the effects of religious discourse</td></tr>
 <tr><td class="cpri-date">Oct 6, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">Oct 20, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">Nov 3, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">Nov 3, 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (guest)</td><td>&mdash;</td></tr>
 <tr><td class="cpri-date">Nov 17, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">Dec 1, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 </tbody>
@@ -137,10 +137,10 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">8 sep 2026</td><td>Maddie Stevens</td><td>&mdash;</td></tr>
-<tr><td class="cpri-date">22 sep 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">22 sep 2026</td><td>Radha Sarkar</td><td>Dos capítulos preliminares sobre los efectos del discurso religioso</td></tr>
 <tr><td class="cpri-date">6 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">20 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">3 nov 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">3 nov 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (invitado)</td><td>&mdash;</td></tr>
 <tr><td class="cpri-date">17 nov 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">1 dic 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 </tbody>
