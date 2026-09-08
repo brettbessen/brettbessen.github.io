@@ -101,7 +101,7 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">Sep 8, 2026</td><td>Maddie Stevens</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">When Absence Is the Spectacle: Enforced Disappearance as Violent Communication</a></td></tr>
-<tr><td class="cpri-date">Sep 22, 2026</td><td>Radha Sarkar</td><td>Two draft chapters on the effects of religious discourse</td></tr>
+<tr><td class="cpri-date">Sep 22, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">Oct 6, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">Oct 20, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">Nov 3, 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (Univ. of Western Ontario)</td><td>&mdash;</td></tr>
@@ -137,7 +137,7 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">8 sep 2026</td><td>Maddie Stevens</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">When Absence Is the Spectacle: Enforced Disappearance as Violent Communication</a></td></tr>
-<tr><td class="cpri-date">22 sep 2026</td><td>Radha Sarkar</td><td>Dos capítulos preliminares sobre los efectos del discurso religioso</td></tr>
+<tr><td class="cpri-date">22 sep 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">6 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">20 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
 <tr><td class="cpri-date">3 nov 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (Univ. of Western Ontario)</td><td>&mdash;</td></tr>
