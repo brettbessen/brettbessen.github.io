@@ -19,7 +19,7 @@ Fall 2025 | Spring–Fall 2026\
 
 <hr>
 
-**Research Methods** (Senior Seminar)
+**Senior Thesis Seminar** (Research Methods)
 Fall 2023–25 | Spring 2023–26\
 <a href="files/syllabuses/Research%20Methods%20-%20Spring%202026.pdf" class="btn btn-outline-secondary btn-xs"><i class="bi bi-file-earmark-pdf"></i> Syllabus</a>
 <a href="power.html" class="btn btn-outline-secondary btn-xs"><i class="bi bi-calculator"></i> Power Calculator</a>
