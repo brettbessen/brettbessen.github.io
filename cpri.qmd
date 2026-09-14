@@ -101,12 +101,12 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">Sep 8, 2026</td><td>Maddie Stevens</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">When Absence Is the Spectacle: Enforced Disappearance as Violent Communication</a></td></tr>
-<tr><td class="cpri-date">Sep 22, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">Oct 6, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">Oct 20, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">Sep 22, 2026</td><td>Radha Sarkar</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">Religious Discourse and the Politics of Gender in Latin America</a> (book chapter)</td></tr>
+<tr><td class="cpri-date">Oct 6, 2026</td><td><a href="https://alexandercoppock.com/">Alex Coppock</a> (Northwestern Univ.)</td><td>&mdash;</td></tr>
+<tr><td class="cpri-date">Oct 20, 2026</td><td>Laura López-Pérez</td><td>Bounded Solidarity: Criminalization and Reputational Costs to Solidarity Among Victims&rsquo; Relatives</td></tr>
 <tr><td class="cpri-date">Nov 3, 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (Univ. of Western Ontario)</td><td>&mdash;</td></tr>
-<tr><td class="cpri-date">Nov 17, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">Dec 1, 2026</td><td class="cpri-open">Available</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">Nov 17, 2026</td><td>Joel Herrera</td><td>&mdash;</td></tr>
+<tr><td class="cpri-date">Dec 1, 2026</td><td>Mayra Ortiz Ocaña</td><td>The Institutional Patterns of Organized Crime Prosecution</td></tr>
 </tbody>
 </table>
 
@@ -137,12 +137,12 @@ h1.title::after {
 </thead>
 <tbody>
 <tr><td class="cpri-date">8 sep 2026</td><td>Maddie Stevens</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">When Absence Is the Spectacle: Enforced Disappearance as Violent Communication</a></td></tr>
-<tr><td class="cpri-date">22 sep 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">6 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">20 oct 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">22 sep 2026</td><td>Radha Sarkar</td><td><a href="https://tecmx-my.sharepoint.com/:f:/g/personal/brettbessen_tec_mx/IgCZRBjRHSyGS6ozNp5VbzmgAaV5TZVQhaKzg8FLnaxHvOg?e=2gZrjT">Religious Discourse and the Politics of Gender in Latin America</a> (capítulo de libro)</td></tr>
+<tr><td class="cpri-date">6 oct 2026</td><td><a href="https://alexandercoppock.com/">Alex Coppock</a> (Northwestern Univ.)</td><td>&mdash;</td></tr>
+<tr><td class="cpri-date">20 oct 2026</td><td>Laura López-Pérez</td><td>Bounded Solidarity: Criminalization and Reputational Costs to Solidarity Among Victims&rsquo; Relatives</td></tr>
 <tr><td class="cpri-date">3 nov 2026</td><td><a href="https://www.svallejovera.com/">Sebastian Vallejo</a> (Univ. of Western Ontario)</td><td>&mdash;</td></tr>
-<tr><td class="cpri-date">17 nov 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
-<tr><td class="cpri-date">1 dic 2026</td><td class="cpri-open">Disponible</td><td class="cpri-open">&mdash;</td></tr>
+<tr><td class="cpri-date">17 nov 2026</td><td>Joel Herrera</td><td>&mdash;</td></tr>
+<tr><td class="cpri-date">1 dic 2026</td><td>Mayra Ortiz Ocaña</td><td>The Institutional Patterns of Organized Crime Prosecution</td></tr>
 </tbody>
 </table>
 
