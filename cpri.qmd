@@ -110,7 +110,7 @@ h1.title::after {
 </tbody>
 </table>
 
-<p class="cpri-note">Questions, or trouble accessing the folder? Email <a href="mailto:radha.sarkar@tec.mx">radha.sarkar@tec.mx</a> or <a href="mailto:brettbessen@tec.mx">brettbessen@tec.mx</a>.</p>
+<p class="cpri-note">Please access the shared folder with your Tec email. Questions, or trouble accessing the folder? Email <a href="mailto:radha.sarkar@tec.mx">radha.sarkar@tec.mx</a> or <a href="mailto:brettbessen@tec.mx">brettbessen@tec.mx</a>.</p>
 
 </div>
 
